@@ -25,6 +25,7 @@ import com.orbteknoloji.ptb.R;
 import com.orbteknoloji.ptb.enums.AlertType;
 import com.orbteknoloji.ptb.helpers.AlertHelper;
 import com.orbteknoloji.ptb.helpers.DateHelper;
+import com.orbteknoloji.ptb.helpers.StringHelper;
 import com.orbteknoloji.ptb.services.BluetoothService;
 
 import java.io.IOException;
@@ -73,14 +74,24 @@ public class OnlineControlFragment extends BaseFragment {
             sKanal4.setEnabled(true);
             BluetoothService.sendData(_context, 0Xfd);
             BluetoothService.sendData(_context,0xff);
-            int reciveff = BluetoothService.receiveData(_context);
-            switch (Integer.toHexString(reciveff)){
-                case "":
+            int receiveFF = BluetoothService.receiveData(_context);
+            char[] receiveFFBinary = (StringHelper.repeatString("0", 4 - Integer.toBinaryString(receiveFF).length())+Integer.toBinaryString(receiveFF)).toCharArray();
+            if (receiveFFBinary.length < 4){
+                AlertHelper.ShowAlertDialog(_context, "Hata", "Bağlantı Hatası!");
+            }else{
+                if (receiveFFBinary[3] == '1'){
                     sKanal1.setChecked(true);
-                    break;
-
+                }
+                if (receiveFFBinary[2] == '1'){
+                    sKanal2.setChecked(true);
+                }
+                if (receiveFFBinary[1] == '1'){
+                    sKanal3.setChecked(true);
+                }
+                if (receiveFFBinary[0] == '1'){
+                    sKanal4.setChecked(true);
+                }
             }
-
             BluetoothService.sendData(_context,0xfc);
             String[] btDateText = BluetoothService.receiveData(_context, 6).split(" ");
             String dateFormated = DateHelper.getDateByBluetooth(btDateText);
