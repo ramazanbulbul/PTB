@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="btn1">#393939</color>
+    <color name="btn2">#AC1919</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#0A0A0A</color>
+    <color name="colorPrimaryDark">#28208C</color>
+    <color name="endcolor">#393939</color>
+    <color name="fab">#AC1919</color>
+    <color name="firstlayer">#6E6E6E</color>
+    <color name="indicator">#FF0000</color>
+    <color name="login_details">#CCFFFFFF</color>
+    <color name="login_details_light">#1AFFFFFF</color>
+    <color name="login_details_medium">#66FFFFFF</color>
+    <color name="orb_black">#0A0A0A</color>
+    <color name="orb_gray">#C4C4C4</color>
+    <color name="orb_purple">#28208C</color>
+    <color name="orb_purple_close">#7065EF</color>
+    <color name="orb_white">#E9E9E9</color>
+    <color name="rehoming_post">#5A5A5A</color>
+    <color name="rhusername">#CCFFFFFF</color>
+    <color name="settings">#DADADA</color>
+    <style name="Base.Theme.PTB" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+</resources>

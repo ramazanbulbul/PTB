@@ -1,0 +1,3 @@
+com.orbteknoloji.ptb.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
