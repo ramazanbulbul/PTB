@@ -5,7 +5,6 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.os.AsyncTask;
 
 import androidx.core.app.ActivityCompat;
 
@@ -34,7 +33,7 @@ public class BluetoothService {
             outputStream = socket.getOutputStream();
             inputStream = socket.getInputStream();
         } catch (IOException e) {
-            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 1", e.getMessage());
+//            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 1", e.getMessage());
             return false;
         }
         return true;
@@ -44,7 +43,7 @@ public class BluetoothService {
         try {
             outputStream.write(data.getBytes());
         } catch (IOException e) {
-            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 2", e.getMessage());
+            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!");
             return false;
         }
         return true;
@@ -53,7 +52,7 @@ public class BluetoothService {
         try {
             outputStream.write(data);
         } catch (IOException e) {
-            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 3", e.getMessage());
+            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!");
             return false;
         }
         return true;
@@ -62,17 +61,16 @@ public class BluetoothService {
         try {
             outputStream.write(data);
         } catch (IOException e) {
-            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 4", e.getMessage());
+            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!");
             return false;
         }
         return true;
     }
     public static boolean sendData(Context _context, int data) {
         try {
-            if (outputStream == null) return false;
             outputStream.write(data);
         } catch (IOException e) {
-            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 5", e.getMessage());
+            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!");
             return false;
         }
         return true;
@@ -83,7 +81,7 @@ public class BluetoothService {
             if (inputStream == null) return -1;
             return inputStream.read();
         } catch (IOException e) {
-            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 6", e.getMessage());
+            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi alımı sırasında bir problemle karışlaşıldı!");
             return -1;
         }
     }
@@ -96,7 +94,7 @@ public class BluetoothService {
             }
             return receivedMessage;
         } catch (IOException e) {
-            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 7", e.getMessage());
+            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi alımı sırasında bir problemle karışlaşıldı!");
             return "false";
         }
     }
@@ -105,7 +103,6 @@ public class BluetoothService {
         try {
             socket.close();
         } catch (IOException e) {
-            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 8", e.getMessage());
             return false;
         }
         return true;

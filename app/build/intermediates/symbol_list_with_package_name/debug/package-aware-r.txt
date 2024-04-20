@@ -3045,6 +3045,9 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_button
+drawable bg_edittext
+drawable bg_form
 drawable bg_track
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3080,6 +3083,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_phone
 drawable ic_phone_128
+drawable ic_plus
 drawable ic_search_black_24
 drawable ic_switch_off
 drawable ic_switch_off_disable
@@ -3236,6 +3240,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_plan
 id alertTitle
 id aligned
 id all
@@ -3266,11 +3271,16 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btDate
+id btnSave
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id cbChannel1
+id cbChannel2
+id cbChannel3
+id cbChannel4
 id center
 id centerCrop
 id centerInside
@@ -3279,6 +3289,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id channels
 id checkbox
 id checked
 id chronometer
@@ -3305,6 +3316,14 @@ id currentState
 id custom
 id customPanel
 id cut
+id cvChannel1
+id cvChannel2
+id cvChannel3
+id cvChannel4
+id cvDescription
+id cvEndDate
+id cvPlanName
+id cvStartDate
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3339,6 +3358,9 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editPlanName
+id editTimeEnd
+id editTimeStart
 id edit_query
 id elastic
 id embed
@@ -3376,6 +3398,8 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id guideline_left
+id guideline_right
 id header
 id headerIcon
 id headerText
@@ -3414,6 +3438,7 @@ id linear
 id listMode
 id list_item
 id locale
+id login_layout
 id ltr
 id m3_side_sheet
 id marquee
@@ -3528,9 +3553,12 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id planCardview
+id plans
 id position
 id postLayout
 id pressed
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3588,6 +3616,8 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinDays
+id splashscreen
 id spline
 id split_action_bar
 id spread
@@ -3634,7 +3664,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3799,7 +3828,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_plan
 layout activity_main
+layout cardview_plan
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3878,6 +3909,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout splash_activity
 layout support_simple_spinner_dropdown_item
 menu bottommenu
 mipmap ic_launcher

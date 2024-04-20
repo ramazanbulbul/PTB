@@ -1,4 +1,4 @@
-#Sun Mar 17 19:27:49 TRT 2024
+#Sat Apr 20 14:43:12 TRT 2024
 base.0=C\:\\Users\\ramazan.bulbul\\Documents\\GitHub\\PTB\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\ramazan.bulbul\\Documents\\GitHub\\PTB\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\ramazan.bulbul\\Documents\\GitHub\\PTB\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
@@ -8,6 +8,7 @@ base.5=C\:\\Users\\ramazan.bulbul\\Documents\\GitHub\\PTB\\app\\build\\intermedi
 base.6=C\:\\Users\\ramazan.bulbul\\Documents\\GitHub\\PTB\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 base.7=C\:\\Users\\ramazan.bulbul\\Documents\\GitHub\\PTB\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
 base.8=C\:\\Users\\ramazan.bulbul\\Documents\\GitHub\\PTB\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.9=C\:\\Users\\ramazan.bulbul\\Documents\\GitHub\\PTB\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex
@@ -17,6 +18,7 @@ path.5=15/classes.dex
 path.6=4/classes.dex
 path.7=5/classes.dex
 path.8=8/classes.dex
+path.9=3/classes.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex
@@ -26,3 +28,4 @@ renamed.5=classes6.dex
 renamed.6=classes7.dex
 renamed.7=classes8.dex
 renamed.8=classes9.dex
+renamed.9=classes10.dex

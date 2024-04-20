@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.AddPlanActivity"
+    android:id="@+id/login_layout"
+    android:background="@drawable/bg_form"
+    tools:ignore="MissingClass">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+    <EditText
+        android:id="@+id/editPlanName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:ems="10"
+        android:hint="Plan Adı"
+        android:editable="false"
+        android:inputType="none"
+        android:focusable="false"
+        android:padding="16dp"
+        android:textColor="@color/login_details"
+        android:textColorHint="@color/login_details_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="75dp"
+
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/channels"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/editPlanName"
+        >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="2"
+            tools:ignore="MissingConstraints">
+            <CheckBox
+                android:id="@+id/cbChannel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:ems="10"
+                android:textColorHint="@color/login_details_medium"
+                android:textColor="@color/login_details"
+                android:background="@drawable/bg_button"
+                android:text="Kanal 1" />
+
+            <CheckBox
+                android:id="@+id/cbChannel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:ems="10"
+                android:textColorHint="@color/login_details_medium"
+                android:textColor="@color/login_details"
+                android:background="@drawable/bg_button"
+                android:text="Kanal 2" />
+
+            <CheckBox
+                android:id="@+id/cbChannel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:ems="10"
+                android:textColorHint="@color/login_details_medium"
+                android:textColor="@color/login_details"
+                android:background="@drawable/bg_button"
+                android:text="Kanal 3" />
+
+            <CheckBox
+                android:id="@+id/cbChannel4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:ems="10"
+                android:textColorHint="@color/login_details_medium"
+                android:textColor="@color/login_details"
+                android:background="@drawable/bg_button"
+                android:text="Kanal 4" />
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Spinner
+        android:id="@+id/spinDays"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button"
+        android:textColor="@color/login_details"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/channels"
+        />
+    <EditText
+        android:id="@+id/editTimeStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button"
+        android:ems="10"
+        android:hint="Başlama Saati"
+        android:focusable="false"
+        android:inputType="text|time"
+        android:padding="16dp"
+        android:textColor="@color/login_details"
+        android:textColorHint="@color/login_details_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/spinDays" />
+<EditText
+        android:id="@+id/editTimeEnd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button"
+        android:ems="10"
+        android:hint="Bitiş Saati"
+        android:focusable="false"
+        android:inputType="text|time"
+        android:padding="16dp"
+        android:textColor="@color/login_details"
+        android:textColorHint="@color/login_details_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/editTimeStart" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ekle"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/login_details_medium"
+        android:background="@drawable/bg_button"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/editTimeEnd"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

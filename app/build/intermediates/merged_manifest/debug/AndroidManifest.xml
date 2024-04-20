@@ -42,11 +42,26 @@
             android:screenOrientation="locked"
             android:theme="@style/Fullscreen" >
             <intent-filter>
+                <action android:name="android.intent.action.HOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.orbteknoloji.ptb.main.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="locked"
+            android:theme="@style/Fullscreen" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.orbteknoloji.ptb.main.AddPlanActivity"
+            android:label="Plan Ekle" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

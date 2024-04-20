@@ -3,7 +3,9 @@ package com.orbteknoloji.ptb.main;
 import android.Manifest;
 import android.animation.ObjectAnimator;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -11,6 +13,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,8 +33,14 @@ import com.orbteknoloji.ptb.adapters.ViewPagerAdapter;
 import com.orbteknoloji.ptb.enums.AlertType;
 import com.orbteknoloji.ptb.helpers.AlertHelper;
 import com.orbteknoloji.ptb.helpers.FragmentHelper;
+import com.orbteknoloji.ptb.helpers.StringHelper;
 import com.orbteknoloji.ptb.services.BluetoothService;
 
+import java.util.Objects;
+
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import me.ibrahimsn.lib.OnItemReselectedListener;
 import me.ibrahimsn.lib.OnItemSelectedListener;
 import me.ibrahimsn.lib.SmoothBottomBar;
 
@@ -41,7 +50,7 @@ public class MainActivity extends BaseActivity {
     private static final int REQUEST_BLUETOOTH_CONNECT = 10003;
     private Handler headerHandler;
     private Runnable headerRunnable;
-
+    private int selectedBottomBar = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,26 +69,23 @@ public class MainActivity extends BaseActivity {
                 ActivityCompat.requestPermissions(_activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, REQUEST_BLUETOOTH_CONNECT);
             }
         }
+
         LinearLayout fragment = findViewById(R.id.fragment);
-        FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new OnlineControlFragment());
         SmoothBottomBar bottomBar = findViewById(R.id.bottomBar);
+
+        Intent intent = getIntent();
+        String TAB_PAGE = intent.getStringExtra("TAB");
+        selectedBottomBar = Integer.parseInt(TAB_PAGE != null && !TAB_PAGE.isEmpty() ? TAB_PAGE : "0");
+        bottomBar.setItemActiveIndex(selectedBottomBar);
+        setTabPage();
         bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public boolean onItemSelect(int i) {
-                if (getSupportFragmentManager().getFragments().get(0) != null){
-                    switch (i){
-                        case 0:
-                            FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new OnlineControlFragment());
-                            break;
-                        case 1:
-                            FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new PlanningFragment());
-                            break;
-                    }
-                }
+                selectedBottomBar = i;
+                setTabPage();
                 return true;
             }
         });
-
         RelativeLayout header = findViewById(R.id.header);
         ImageView headerIcon = findViewById(R.id.headerIcon);
         TextView headerText = findViewById(R.id.headerText);
@@ -119,7 +125,12 @@ public class MainActivity extends BaseActivity {
         };
         headerHandler.postDelayed(headerRunnable, 2000);
 
-        header.setOnClickListener(btnHeaderOnClick());
+        header.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setTabPage();
+            }
+        });
     }
 
 
@@ -225,15 +236,17 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        headerHandler.removeCallbacks(headerRunnable);
+        if (headerHandler != null)
+            headerHandler.removeCallbacks(headerRunnable);
     }
-    public View.OnClickListener btnHeaderOnClick(){
-        return  new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        };
+    public void setTabPage(){
+        switch (selectedBottomBar){
+            case 0:
+                FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new OnlineControlFragment());
+                break;
+            case 1:
+                FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new PlanningFragment());
+                break;
+        }
     }
-
 }
