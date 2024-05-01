@@ -52,7 +52,7 @@ public class BluetoothService {
         try {
             outputStream.write(data);
         } catch (IOException e) {
-            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!");
+            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!" + e.getMessage());
             return false;
         }
         return true;

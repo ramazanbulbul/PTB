@@ -1,5 +1,7 @@
 package com.orbteknoloji.ptb.helpers;
 
+import com.orbteknoloji.ptb.enums.RepeatStringType;
+
 public class DateHelper {
     private static String[] months = {"","Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
             "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"};
@@ -17,7 +19,7 @@ public class DateHelper {
         if (blutoothData.length < 6) return "";
         String dateFormated = "";
         dateFormated += blutoothData[2] + " " + getMonth(Integer.parseInt(blutoothData[1])) + " " + "20" + blutoothData[0] + "\n";
-        dateFormated += getDay(Integer.parseInt(blutoothData[3])) + " " + blutoothData[4] + ":" + blutoothData[5];
+        dateFormated += getDay(Integer.parseInt(blutoothData[3])) + " " + StringHelper.repeatString(blutoothData[4],2, "0", RepeatStringType.BEFORE) + ":" + StringHelper.repeatString(blutoothData[5],2, "0", RepeatStringType.BEFORE);
         return dateFormated;
     }
 }

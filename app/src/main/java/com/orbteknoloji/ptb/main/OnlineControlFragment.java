@@ -38,13 +38,16 @@ import java.util.Set;
 import java.util.UUID;
 
 public class OnlineControlFragment extends BaseFragment {
-    Switch sChannel1,sChannel2,sChannel3,sChannel4;
+    Switch sChannel1, sChannel2, sChannel3, sChannel4;
     TextView btDate;
     BluetoothAdapter bluetoothAdapter;
     int REQUEST_ENABLE_BT = 10001;
     int REQUEST_BLUETOOTH_CONNECT = 10002;
     private Handler handler;
+    private Handler handlerDate;
     private Runnable runnable;
+    private Runnable runnableDate;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View root = inflater.inflate(R.layout.fragment_online_control, container, false);
@@ -77,15 +80,15 @@ public class OnlineControlFragment extends BaseFragment {
 
 
         handler = new Handler(Looper.getMainLooper());
-        handler.postDelayed(new Runnable() {
+        runnable = new Runnable() {
             @Override
             public void run() {
                 boolean isConnected = BluetoothService.isConnected();
-                if (!isConnected){
+                if (!isConnected) {
                     Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
                     for (BluetoothDevice device : pairedDevices) {
                         if (device.getName().equals("HC-05")) {
-                            BluetoothService.connectToDevice(_context,device);
+                            BluetoothService.connectToDevice(_context, device);
                             break;
                         }
                     }
@@ -96,42 +99,38 @@ public class OnlineControlFragment extends BaseFragment {
                     sChannel2.setEnabled(true);
                     sChannel3.setEnabled(true);
                     sChannel4.setEnabled(true);
-                    BluetoothService.sendData(_context, 0Xfd);
+
                     BluetoothService.sendData(_context,0xff);
                     int receiveFF = BluetoothService.receiveData(_context);
-                    char[] receiveFFBinary = (StringHelper.repeatString("0", 4 - Integer.toBinaryString(receiveFF).length())+Integer.toBinaryString(receiveFF)).toCharArray();
-                    if (receiveFFBinary.length < 4){
+                    char[] receiveFFBinary = (StringHelper.repeatString("0", 4 - Integer.toBinaryString(receiveFF).length()) + Integer.toBinaryString(receiveFF)).toCharArray();
+                    if (receiveFFBinary.length < 4) {
                         AlertHelper.ShowAlertDialog(_context, "Hata", "Bağlantı Hatası!");
-                    }else{
-                        if (receiveFFBinary[3] == '1'){
+                    } else {
+                        if (receiveFFBinary[3] == '1') {
                             sChannel1.setChecked(true);
                         }
-                        if (receiveFFBinary[2] == '1'){
+                        if (receiveFFBinary[2] == '1') {
                             sChannel2.setChecked(true);
                         }
-                        if (receiveFFBinary[1] == '1'){
+                        if (receiveFFBinary[1] == '1') {
                             sChannel3.setChecked(true);
                         }
-                        if (receiveFFBinary[0] == '1'){
+                        if (receiveFFBinary[0] == '1') {
                             sChannel4.setChecked(true);
                         }
                     }
-//            BluetoothService.sendData(_context,0xfc);
-//            String[] btDateText = BluetoothService.receiveData(_context, 6).split(" ");
-//            String dateFormated = DateHelper.getDateByBluetooth(btDateText);
-//            btDate.setText(dateFormated);
-//
-//            handler = new Handler();
-//            runnable = new Runnable() {
-//                @Override
-//                public void run() {
-//                    BluetoothService.sendData(_context,0xfc);
-//                    String[] btDateText = BluetoothService.receiveData(_context, 6).split(" ");
-//                    String dateFormatted = DateHelper.getDateByBluetooth(btDateText);
-//                    btDate.setText(dateFormatted);
-//                }
-//            };
-//            handler.postDelayed(runnable, 30000);
+                    handlerDate = new Handler();
+                    runnableDate = new Runnable() {
+                        @Override
+                        public void run() {
+                            BluetoothService.sendData(_context, 0xfc);
+                            String[] btDateText = BluetoothService.receiveData(_context, 6).split(" ");
+                            String dateFormatted = DateHelper.getDateByBluetooth(btDateText);
+                            btDate.setText(dateFormatted);
+                            handlerDate.postDelayed(this, 30000);
+                        }
+                    };
+                    handlerDate.postDelayed(runnableDate, 0);
 
                     sChannel1.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -159,7 +158,7 @@ public class OnlineControlFragment extends BaseFragment {
                     });
                     progressDialog.hide();
                     progressDialog.dismiss();
-                }else {
+                } else {
                     progressDialog.hide();
                     progressDialog.dismiss();
                     AlertHelper.ShowAlertDialog(_context, AlertType.ERROR,
@@ -170,10 +169,11 @@ public class OnlineControlFragment extends BaseFragment {
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     getActivity().finish();
                                 }
-                            },true, null);
+                            }, true, null);
                 }
             }
-        }, 1000); // 1000 milisaniye = 1 saniye
+        };
+        handler.postDelayed(runnable, 100); // 1000 milisaniye = 1 saniye
 
         return root;
     }
@@ -182,6 +182,7 @@ public class OnlineControlFragment extends BaseFragment {
     public void onDestroyView() {
         super.onDestroyView();
         if (handler != null) handler.removeCallbacks(runnable);
+        if (handlerDate != null) handlerDate.removeCallbacks(runnableDate);
     }
 
     @Override

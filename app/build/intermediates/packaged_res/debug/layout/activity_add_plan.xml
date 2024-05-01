@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.AddPlanActivity"
-    android:id="@+id/login_layout"
     android:background="@drawable/bg_form"
+    tools:context=".main.AddPlanActivity"
     tools:ignore="MissingClass">
 
 
@@ -23,25 +23,27 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="24dp" />
+
     <EditText
         android:id="@+id/editPlanName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
         android:background="@drawable/bg_button"
-        android:ems="10"
-        android:hint="Plan Adı"
         android:editable="false"
-        android:inputType="none"
+        android:ems="10"
         android:focusable="false"
+        android:hint="Plan Adı"
+        android:inputType="none"
         android:padding="16dp"
         android:textColor="@color/login_details"
         android:textColorHint="@color/login_details_medium"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="75dp"
 
         />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/channels"
         android:layout_width="0dp"
@@ -49,25 +51,26 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@id/editPlanName"
-        >
+        app:layout_constraintTop_toBottomOf="@id/editPlanName">
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:rowCount="2"
             android:columnCount="2"
+            android:rowCount="2"
             tools:ignore="MissingConstraints">
+
             <CheckBox
                 android:id="@+id/cbChannel1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:ems="10"
-                android:textColorHint="@color/login_details_medium"
-                android:textColor="@color/login_details"
                 android:background="@drawable/bg_button"
-                android:text="Kanal 1" />
+                android:ems="10"
+                android:text="Kanal 1"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
 
             <CheckBox
                 android:id="@+id/cbChannel2"
@@ -75,11 +78,11 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:ems="10"
-                android:textColorHint="@color/login_details_medium"
-                android:textColor="@color/login_details"
                 android:background="@drawable/bg_button"
-                android:text="Kanal 2" />
+                android:ems="10"
+                android:text="Kanal 2"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
 
             <CheckBox
                 android:id="@+id/cbChannel3"
@@ -87,11 +90,11 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:ems="10"
-                android:textColorHint="@color/login_details_medium"
-                android:textColor="@color/login_details"
                 android:background="@drawable/bg_button"
-                android:text="Kanal 3" />
+                android:ems="10"
+                android:text="Kanal 3"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
 
             <CheckBox
                 android:id="@+id/cbChannel4"
@@ -99,11 +102,11 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:ems="10"
-                android:textColorHint="@color/login_details_medium"
-                android:textColor="@color/login_details"
                 android:background="@drawable/bg_button"
-                android:text="Kanal 4" />
+                android:ems="10"
+                android:text="Kanal 4"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
         </GridLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -117,8 +120,8 @@
         android:textColor="@color/login_details"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@id/channels"
-        />
+        app:layout_constraintTop_toBottomOf="@id/channels" />
+
     <EditText
         android:id="@+id/editTimeStart"
         android:layout_width="0dp"
@@ -126,8 +129,8 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_button"
         android:ems="10"
-        android:hint="Başlama Saati"
         android:focusable="false"
+        android:hint="Başlama Saati"
         android:inputType="text|time"
         android:padding="16dp"
         android:textColor="@color/login_details"
@@ -135,15 +138,16 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/spinDays" />
-<EditText
+
+    <EditText
         android:id="@+id/editTimeEnd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_button"
         android:ems="10"
-        android:hint="Bitiş Saati"
         android:focusable="false"
+        android:hint="Bitiş Saati"
         android:inputType="text|time"
         android:padding="16dp"
         android:textColor="@color/login_details"
@@ -152,22 +156,80 @@
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/editTimeStart" />
 
-    <Button
-        android:id="@+id/btnSave"
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ekle"
-        android:layout_marginEnd="0dp"
         android:layout_marginStart="0dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical"
         android:textAllCaps="false"
         android:textColor="@color/login_details_medium"
-        android:background="@drawable/bg_button"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/editTimeEnd"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints">
 
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/bg_button"
+            android:text="Ekle"
+            android:textAllCaps="false"
+            android:textColor="@color/login_details_medium"
+            tools:ignore="MissingConstraints" />
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/glEdit"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="1"
+            android:textAllCaps="false"
+            android:textColor="@color/login_details_medium"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_button"
+                android:text="Düzenle"
+                android:textAllCaps="false"
+                android:textColor="@color/login_details_medium"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/bg_button"
+                android:text="Sil"
+                android:textAllCaps="false"
+                android:textColor="@color/login_details_medium"
+                tools:ignore="MissingConstraints" />
+        </GridLayout>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

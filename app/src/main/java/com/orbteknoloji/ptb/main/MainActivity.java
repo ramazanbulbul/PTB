@@ -29,6 +29,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
 import com.orbteknoloji.ptb.BaseActivity;
 import com.orbteknoloji.ptb.R;
+import com.orbteknoloji.ptb.adapters.PlanAdapter;
 import com.orbteknoloji.ptb.adapters.ViewPagerAdapter;
 import com.orbteknoloji.ptb.enums.AlertType;
 import com.orbteknoloji.ptb.helpers.AlertHelper;
@@ -75,14 +76,15 @@ public class MainActivity extends BaseActivity {
 
         Intent intent = getIntent();
         String TAB_PAGE = intent.getStringExtra("TAB");
+        boolean isUpdate = intent.getBooleanExtra("IS_UPDATE", false);
         selectedBottomBar = Integer.parseInt(TAB_PAGE != null && !TAB_PAGE.isEmpty() ? TAB_PAGE : "0");
         bottomBar.setItemActiveIndex(selectedBottomBar);
-        setTabPage();
+        setTabPage(TAB_PAGE != null, isUpdate);
         bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public boolean onItemSelect(int i) {
                 selectedBottomBar = i;
-                setTabPage();
+                setTabPage(true, false);
                 return true;
             }
         });
@@ -128,7 +130,7 @@ public class MainActivity extends BaseActivity {
         header.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setTabPage();
+                setTabPage(true, false);
             }
         });
     }
@@ -239,13 +241,18 @@ public class MainActivity extends BaseActivity {
         if (headerHandler != null)
             headerHandler.removeCallbacks(headerRunnable);
     }
-    public void setTabPage(){
+    public void setTabPage(boolean reset, boolean isUpdate){
+        if (reset){
+            if (BluetoothService.isConnected()){
+                BluetoothService.sendData(_context,0xfd);
+            }
+        }
         switch (selectedBottomBar){
             case 0:
                 FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new OnlineControlFragment());
                 break;
             case 1:
-                FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new PlanningFragment());
+                FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new PlanningFragment(isUpdate));
                 break;
         }
     }

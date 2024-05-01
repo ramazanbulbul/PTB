@@ -3074,6 +3074,7 @@ drawable ic_info_24
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_left_arrow
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3084,6 +3085,8 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_phone
 drawable ic_phone_128
 drawable ic_plus
+drawable ic_plus_1
+drawable ic_right_arrow
 drawable ic_search_black_24
 drawable ic_switch_off
 drawable ic_switch_off_disable
@@ -3240,7 +3243,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id add_plan
 id alertTitle
 id aligned
 id all
@@ -3271,7 +3273,11 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btDate
+id btnAddPlan
+id btnDelete
+id btnEdit
 id btnSave
+id btnSendPlan
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3320,8 +3326,9 @@ id cvChannel1
 id cvChannel2
 id cvChannel3
 id cvChannel4
-id cvDescription
+id cvDate
 id cvEndDate
+id cvPlan
 id cvPlanName
 id cvStartDate
 id date_picker_actions
@@ -3392,6 +3399,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glEdit
 id gone
 id graph
 id graph_wrap
@@ -3553,7 +3561,6 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id planCardview
 id plans
 id position
 id postLayout

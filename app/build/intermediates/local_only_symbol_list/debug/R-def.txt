@@ -36,9 +36,12 @@ drawable ic_error_24
 drawable ic_info_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_left_arrow
 drawable ic_phone
 drawable ic_phone_128
 drawable ic_plus
+drawable ic_plus_1
+drawable ic_right_arrow
 drawable ic_switch_off
 drawable ic_switch_off_disable
 drawable ic_switch_on
@@ -49,10 +52,13 @@ drawable v_task_128
 font roboto_light
 font roboto_thin
 id action_firstFragment_to_secondFragment
-id add_plan
 id bottomBar
 id btDate
+id btnAddPlan
+id btnDelete
+id btnEdit
 id btnSave
+id btnSendPlan
 id cbChannel1
 id cbChannel2
 id cbChannel3
@@ -62,8 +68,9 @@ id cvChannel1
 id cvChannel2
 id cvChannel3
 id cvChannel4
-id cvDescription
+id cvDate
 id cvEndDate
+id cvPlan
 id cvPlanName
 id cvStartDate
 id editPlanName
@@ -71,6 +78,7 @@ id editTimeEnd
 id editTimeStart
 id first_fragment
 id fragment
+id glEdit
 id guideline_left
 id guideline_right
 id header
@@ -80,7 +88,6 @@ id item0
 id item1
 id login_layout
 id nav_graph
-id planCardview
 id plans
 id progressBar
 id second_fragment
