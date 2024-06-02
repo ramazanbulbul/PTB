@@ -63,6 +63,13 @@ id cbChannel1
 id cbChannel2
 id cbChannel3
 id cbChannel4
+id cbDays1
+id cbDays2
+id cbDays3
+id cbDays4
+id cbDays5
+id cbDays6
+id cbDays7
 id channels
 id cvChannel1
 id cvChannel2
@@ -73,11 +80,13 @@ id cvEndDate
 id cvPlan
 id cvPlanName
 id cvStartDate
+id days
 id editPlanName
 id editTimeEnd
 id editTimeStart
 id first_fragment
 id fragment
+id glDays
 id glEdit
 id guideline_left
 id guideline_right
@@ -91,7 +100,6 @@ id nav_graph
 id plans
 id progressBar
 id second_fragment
-id spinDays
 id splashscreen
 id switchKanal1
 id switchKanal2

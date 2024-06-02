@@ -2,6 +2,7 @@ package com.orbteknoloji.ptb.helpers;
 
 public class IntegerHelper {
     public static Integer hexToInt(String hexString){
+        if (hexString.equalsIgnoreCase("00")) hexString = "0";
         return Integer.parseInt(hexString, 16);
     }
     public static String binaryToHex(String binaryString){

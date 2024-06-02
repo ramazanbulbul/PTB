@@ -108,9 +108,14 @@ public class PlanningFragment extends BaseFragment {
                 BluetoothService.sendData(_context, 0xf9);
                 String receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                 if (receiveHexData.equalsIgnoreCase("F9")){
+                    ProgressDialog planDialog = new ProgressDialog(_context);
+                    planDialog.setMessage("Plan aktarılıyor");
+                    planDialog.setCancelable(false);
+                    planDialog.create();
+                    planDialog.show();
                     for (PlanModel model : TempDatabase.plans) {
                         String day = String.valueOf(model.getDate());
-                        String channels = IntegerHelper.binaryToHex((model.isChannel1() ? "1" : "0") + (model.isChannel2() ? "1" : "0") + (model.isChannel3() ? "1" : "0") + (model.isChannel4() ? "1" : "0"));
+                        String channels = IntegerHelper.binaryToHex((model.isChannel4() ? "1" : "0") + (model.isChannel3() ? "1" : "0") + (model.isChannel2() ? "1" : "0") + (model.isChannel1() ? "1" : "0"));
                         String startHour = model.getStartTime().split(":")[0];
                         String startMin = model.getStartTime().split(":")[1];
                         String endHour = model.getEndTime().split(":")[0];
@@ -121,35 +126,38 @@ public class PlanningFragment extends BaseFragment {
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata");
+                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
                         }
                         sendData = Integer.parseInt(startHour, 16);
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata");
+                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
                         }
                         sendData = Integer.parseInt(startMin, 16);
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata");
+                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
                         }
                         sendData = Integer.parseInt(endHour, 16);
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata");
+                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
                         }
                         sendData = Integer.parseInt(endMin, 16);
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata");
+                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
                         }
                     }
+                    planDialog.hide();
+                    planDialog.dismiss();
                 }else{
-                    AlertHelper.ShowAlertDialog(_context, "Hata", "hata");
+                    AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData): F9 receiveHexData:" + receiveHexData);
+                    BluetoothService.sendData(_context, 0xf9);
                 }
                 BluetoothService.sendData(_context, 0xfd);
             }
@@ -172,6 +180,7 @@ public class PlanningFragment extends BaseFragment {
                 isConnected = BluetoothService.isConnected();
                 if (isConnected) {
                     if (!_isUpdate){
+                        BluetoothService.sendData(_context, 0xfd);
                         BluetoothService.sendData(_context, 0xfe);
                         String receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (receiveHexData.equalsIgnoreCase("FE")) {
@@ -252,6 +261,9 @@ public class PlanningFragment extends BaseFragment {
                                 RecyclerView rvPlans = root.findViewById(R.id.plans);
                                 setPlanAdapter(rvPlans,planAdapter);
                             }
+//                            else {
+//                                receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
+//                            }
                         } else {
                             AlertHelper.ShowAlertDialog(_context, AlertType.ERROR,
                                     "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!",
@@ -267,7 +279,6 @@ public class PlanningFragment extends BaseFragment {
 
                     btnSendPlan.setVisibility(View.VISIBLE);
                     progressDialog.hide();
-                    progressDialog.dismiss();
                 }
             }
         };

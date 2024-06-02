@@ -3287,6 +3287,13 @@ id cbChannel1
 id cbChannel2
 id cbChannel3
 id cbChannel4
+id cbDays1
+id cbDays2
+id cbDays3
+id cbDays4
+id cbDays5
+id cbDays6
+id cbDays7
 id center
 id centerCrop
 id centerInside
@@ -3332,6 +3339,7 @@ id cvPlan
 id cvPlanName
 id cvStartDate
 id date_picker_actions
+id days
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -3399,6 +3407,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glDays
 id glEdit
 id gone
 id graph
@@ -3623,7 +3632,6 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
-id spinDays
 id splashscreen
 id spline
 id split_action_bar

@@ -111,16 +111,126 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <Spinner
-        android:id="@+id/spinDays"
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinDays"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:background="@drawable/bg_button"-->
+    <!--        android:textColor="@color/login_details"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline_right"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline_left"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/channels" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/days"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/bg_button"
-        android:textColor="@color/login_details"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@id/channels" />
+        app:layout_constraintTop_toBottomOf="@id/channels">
+
+        <GridLayout
+            android:id="@+id/glDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="8"
+            tools:ignore="MissingConstraints">
+
+            <CheckBox
+                android:id="@+id/cbDays1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_button"
+                android:ems="10"
+                android:tag="1"
+                android:text="Pazartesi"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
+
+            <CheckBox
+                android:id="@+id/cbDays2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_button"
+                android:ems="10"
+                android:tag="2"
+                android:text="Salı"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
+
+            <CheckBox
+                android:id="@+id/cbDays3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_button"
+                android:ems="10"
+                android:tag="3"
+                android:text="Çarşamba"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
+
+            <CheckBox
+                android:id="@+id/cbDays4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_button"
+                android:ems="10"
+                android:tag="4"
+                android:text="Perşembe"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
+
+            <CheckBox
+                android:id="@+id/cbDays5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_button"
+                android:ems="10"
+                android:tag="5"
+                android:text="Cuma"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
+
+            <CheckBox
+                android:id="@+id/cbDays6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_button"
+                android:ems="10"
+                android:tag="6"
+                android:text="Cumartesi"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
+
+            <CheckBox
+                android:id="@+id/cbDays7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_button"
+                android:ems="10"
+                android:tag="7"
+                android:text="Pazar"
+                android:textColor="@color/login_details"
+                android:textColorHint="@color/login_details_medium" />
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <EditText
         android:id="@+id/editTimeStart"
@@ -137,7 +247,7 @@
         android:textColorHint="@color/login_details_medium"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/spinDays" />
+        app:layout_constraintTop_toBottomOf="@+id/days" />
 
     <EditText
         android:id="@+id/editTimeEnd"
@@ -185,7 +295,6 @@
 
         <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/glEdit"
-            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
@@ -196,6 +305,7 @@
             android:rowCount="1"
             android:textAllCaps="false"
             android:textColor="@color/login_details_medium"
+            android:visibility="gone"
             tools:ignore="MissingConstraints">
 
             <Button

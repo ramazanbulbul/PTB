@@ -5,6 +5,7 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.os.Build;
 
 import androidx.core.app.ActivityCompat;
 
@@ -24,9 +25,11 @@ public class BluetoothService {
     public static boolean connectToDevice(Context _context, BluetoothDevice device) {
         UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"); // SPP UUID
         try {
-            if (ActivityCompat.checkSelfPermission(_context, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
-                AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bluetooh yetkisi verilmeden devam edilemez!");
-                return false;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                if (ActivityCompat.checkSelfPermission(_context, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bluetooh yetkisi verilmeden devam edilemez!");
+                    return false;
+                }
             }
             socket = socket == null ? device.createRfcommSocketToServiceRecord(uuid) : socket;
             socket.connect();

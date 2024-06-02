@@ -60,7 +60,6 @@ public class PlanAdapter extends RecyclerView.Adapter<PlanAdapter.ViewHolder> {
 
             View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_plan, parent, false);
             final PlanAdapter.ViewHolder view_holder = new PlanAdapter.ViewHolder(v);
-            v.setTag(plans.get(plans.size()-1).getPlanId());
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -74,14 +73,15 @@ public class PlanAdapter extends RecyclerView.Adapter<PlanAdapter.ViewHolder> {
 
         @Override
         public void onBindViewHolder(final PlanAdapter.ViewHolder holder, final int position) {
+            holder.cvPlan.setTag(plans.get(position).getPlanId());
             holder.cvPlanName.setText(plans.get(position).getPlanName());
             holder.cvDate.setText(plans.get(position).getDateString());
             holder.cvStartDate.setText(plans.get(position).getStartTime());
             holder.cvEndDate.setText(plans.get(position).getEndTime());
-            holder.cvChannel1.setImageResource(plans.get(position).isChannel1() ? R.drawable.ic_switch_on : R.drawable.ic_switch_off);
-            holder.cvChannel2.setImageResource(plans.get(position).isChannel2() ? R.drawable.ic_switch_on : R.drawable.ic_switch_off);
-            holder.cvChannel3.setImageResource(plans.get(position).isChannel3() ? R.drawable.ic_switch_on : R.drawable.ic_switch_off);
-            holder.cvChannel4.setImageResource(plans.get(position).isChannel4() ? R.drawable.ic_switch_on : R.drawable.ic_switch_off);
+            holder.cvChannel1.setImageResource(plans.get(position).isChannel1() ? R.drawable.ic_switch_on : R.drawable.ic_switch_on_disable);
+            holder.cvChannel2.setImageResource(plans.get(position).isChannel2() ? R.drawable.ic_switch_on : R.drawable.ic_switch_on_disable);
+            holder.cvChannel3.setImageResource(plans.get(position).isChannel3() ? R.drawable.ic_switch_on : R.drawable.ic_switch_on_disable);
+            holder.cvChannel4.setImageResource(plans.get(position).isChannel4() ? R.drawable.ic_switch_on : R.drawable.ic_switch_on_disable);
         }
 
         @Override

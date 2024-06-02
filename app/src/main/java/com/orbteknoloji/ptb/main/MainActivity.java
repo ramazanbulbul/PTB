@@ -242,11 +242,11 @@ public class MainActivity extends BaseActivity {
             headerHandler.removeCallbacks(headerRunnable);
     }
     public void setTabPage(boolean reset, boolean isUpdate){
-        if (reset){
-            if (BluetoothService.isConnected()){
-                BluetoothService.sendData(_context,0xfd);
-            }
-        }
+//        if (reset){
+//            if (BluetoothService.isConnected()){
+//                BluetoothService.sendData(_context,0xfd);
+//            }
+//        }
         switch (selectedBottomBar){
             case 0:
                 FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new OnlineControlFragment());
