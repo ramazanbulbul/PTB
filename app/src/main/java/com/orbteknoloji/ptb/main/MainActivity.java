@@ -26,6 +26,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
 import androidx.viewpager.widget.ViewPager;
 
+import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.google.android.material.tabs.TabLayout;
 import com.orbteknoloji.ptb.BaseActivity;
 import com.orbteknoloji.ptb.R;
@@ -49,9 +50,10 @@ public class MainActivity extends BaseActivity {
     private static final int REQUEST_ENABLE_BT = 10001;
     private static final int REQUEST_COARSE_LOCATION = 10002;
     private static final int REQUEST_BLUETOOTH_CONNECT = 10003;
-    private Handler headerHandler;
-    private Runnable headerRunnable;
+    private Handler handler;
+    private Runnable runnable;
     private int selectedBottomBar = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,67 +74,77 @@ public class MainActivity extends BaseActivity {
         }
 
         LinearLayout fragment = findViewById(R.id.fragment);
-        SmoothBottomBar bottomBar = findViewById(R.id.bottomBar);
-
+//        SmoothBottomBar bottomBar = findViewById(R.id.bottomBar);
+        MeowBottomNavigation bottomNavigation = findViewById(R.id.bottomNavigation);
+        bottomNavigation.add(new MeowBottomNavigation.Model(0, R.drawable.ic_home));
+        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_task_512));
         Intent intent = getIntent();
         String TAB_PAGE = intent.getStringExtra("TAB");
         boolean isUpdate = intent.getBooleanExtra("IS_UPDATE", false);
         selectedBottomBar = Integer.parseInt(TAB_PAGE != null && !TAB_PAGE.isEmpty() ? TAB_PAGE : "0");
-        bottomBar.setItemActiveIndex(selectedBottomBar);
-        setTabPage(TAB_PAGE != null, isUpdate);
-        bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {
-            @Override
-            public boolean onItemSelect(int i) {
-                selectedBottomBar = i;
-                setTabPage(true, false);
-                return true;
-            }
-        });
-        RelativeLayout header = findViewById(R.id.header);
-        ImageView headerIcon = findViewById(R.id.headerIcon);
-        TextView headerText = findViewById(R.id.headerText);
-
-        //      HAREKETLI HEADER
-        headerHandler = new Handler();
-        headerRunnable = new Runnable() {
+        handler = new Handler();
+        runnable = new Runnable() {
             @Override
             public void run() {
-                if (headerIcon.getVisibility() == View.INVISIBLE){
-
-                    ObjectAnimator.ofFloat(headerText, "alpha", 1f, 0f).setDuration(1000).start();
-
-                    Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            headerText.setVisibility(View.INVISIBLE);
-                            headerIcon.setVisibility(View.VISIBLE);
-                            ObjectAnimator.ofFloat(headerIcon, "alpha", 0f, 1f).setDuration(1000).start();
-                        }
-                    }, 1000);
-                }else if (headerIcon.getVisibility() == View.VISIBLE){
-                    ObjectAnimator.ofFloat(headerIcon, "alpha", 1f, 0f).setDuration(1000).start();
-                    Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            headerIcon.setVisibility(View.INVISIBLE);
-                            headerText.setVisibility(View.VISIBLE);
-                            ObjectAnimator.ofFloat(headerText, "alpha", 0f, 1f).setDuration(1000).start();
-                        }
-                    }, 1000);
-                }
-                headerHandler.postDelayed(this, 3000);
+                bottomNavigation.show(selectedBottomBar, true);
+                setTabPage(TAB_PAGE != null, isUpdate);
             }
         };
-        headerHandler.postDelayed(headerRunnable, 2000);
+        handler.postDelayed(runnable, 0);
 
-        header.setOnClickListener(new View.OnClickListener() {
+        bottomNavigation.setOnClickMenuListener(new Function1<MeowBottomNavigation.Model, Unit>() {
             @Override
-            public void onClick(View view) {
+            public Unit invoke(MeowBottomNavigation.Model model) {
+                selectedBottomBar = model.getId();
                 setTabPage(true, false);
+                return null;
             }
         });
+//        RelativeLayout header = findViewById(R.id.header);
+//        ImageView headerIcon = findViewById(R.id.headerIcon);
+//        TextView headerText = findViewById(R.id.headerText);
+
+        //      HAREKETLI HEADER
+//        headerHandler = new Handler();
+//        headerRunnable = new Runnable() {
+//            @Override
+//            public void run() {
+//                if (headerIcon.getVisibility() == View.INVISIBLE){
+//
+//                    ObjectAnimator.ofFloat(headerText, "alpha", 1f, 0f).setDuration(1000).start();
+//
+//                    Handler handler = new Handler();
+//                    handler.postDelayed(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            headerText.setVisibility(View.INVISIBLE);
+//                            headerIcon.setVisibility(View.VISIBLE);
+//                            ObjectAnimator.ofFloat(headerIcon, "alpha", 0f, 1f).setDuration(1000).start();
+//                        }
+//                    }, 1000);
+//                }else if (headerIcon.getVisibility() == View.VISIBLE){
+//                    ObjectAnimator.ofFloat(headerIcon, "alpha", 1f, 0f).setDuration(1000).start();
+//                    Handler handler = new Handler();
+//                    handler.postDelayed(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            headerIcon.setVisibility(View.INVISIBLE);
+//                            headerText.setVisibility(View.VISIBLE);
+//                            ObjectAnimator.ofFloat(headerText, "alpha", 0f, 1f).setDuration(1000).start();
+//                        }
+//                    }, 1000);
+//                }
+//                headerHandler.postDelayed(this, 3000);
+//            }
+//        };
+//        headerHandler.postDelayed(headerRunnable, 2000);
+//
+//        header.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                setTabPage(true, false);
+//            }
+//        });
     }
 
 
@@ -213,7 +225,8 @@ public class MainActivity extends BaseActivity {
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                                         ActivityCompat.requestPermissions(_activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, REQUEST_BLUETOOTH_CONNECT);
-                                    }                                }
+                                    }
+                                }
                             },
                             "Çık",
                             new DialogInterface.OnClickListener() {
@@ -228,26 +241,29 @@ public class MainActivity extends BaseActivity {
                                 public void onCancel(DialogInterface dialogInterface) {
                                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                                         ActivityCompat.requestPermissions(_activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, REQUEST_BLUETOOTH_CONNECT);
-                                    }                                }
+                                    }
+                                }
                             });
                 }
                 break;
 
         }
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (headerHandler != null)
-            headerHandler.removeCallbacks(headerRunnable);
+        if (handler != null)
+            handler.removeCallbacks(runnable);
     }
-    public void setTabPage(boolean reset, boolean isUpdate){
+
+    public void setTabPage(boolean reset, boolean isUpdate) {
 //        if (reset){
 //            if (BluetoothService.isConnected()){
 //                BluetoothService.sendData(_context,0xfd);
 //            }
 //        }
-        switch (selectedBottomBar){
+        switch (selectedBottomBar) {
             case 0:
                 FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new OnlineControlFragment());
                 break;

@@ -108,11 +108,7 @@ public class PlanningFragment extends BaseFragment {
                 BluetoothService.sendData(_context, 0xf9);
                 String receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                 if (receiveHexData.equalsIgnoreCase("F9")){
-                    ProgressDialog planDialog = new ProgressDialog(_context);
-                    planDialog.setMessage("Plan aktarılıyor");
-                    planDialog.setCancelable(false);
-                    planDialog.create();
-                    planDialog.show();
+                    progressDialog.show();
                     for (PlanModel model : TempDatabase.plans) {
                         String day = String.valueOf(model.getDate());
                         String channels = IntegerHelper.binaryToHex((model.isChannel4() ? "1" : "0") + (model.isChannel3() ? "1" : "0") + (model.isChannel2() ? "1" : "0") + (model.isChannel1() ? "1" : "0"));
@@ -153,8 +149,7 @@ public class PlanningFragment extends BaseFragment {
                             AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
                         }
                     }
-                    planDialog.hide();
-                    planDialog.dismiss();
+                    progressDialog.hide();
                 }else{
                     AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData): F9 receiveHexData:" + receiveHexData);
                     BluetoothService.sendData(_context, 0xf9);
@@ -171,7 +166,7 @@ public class PlanningFragment extends BaseFragment {
                 if (!isConnected) {
                     Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
                     for (BluetoothDevice device : pairedDevices) {
-                        if (device.getName().equals("HC-05")) {
+                        if (device.getName().equals("PTB")) {
                             BluetoothService.connectToDevice(_context, device);
                             break;
                         }

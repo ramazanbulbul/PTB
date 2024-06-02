@@ -6,13 +6,15 @@
     android:orientation="vertical"
     android:background="@color/colorPrimary">
 
-    <ImageView
-        android:id="@+id/splashscreen"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_launcher_foreground" />
-
+        android:gravity="center_horizontal"
+        android:text="PTB"
+        android:textSize="32dp"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/orb_white"
+        android:layout_marginBottom="8dp"/>
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

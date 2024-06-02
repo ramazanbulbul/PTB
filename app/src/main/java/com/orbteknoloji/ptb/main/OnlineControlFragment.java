@@ -9,6 +9,7 @@ import android.bluetooth.BluetoothSocket;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.ColorStateList;
 import android.icu.util.Calendar;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,7 +18,10 @@ import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,7 +47,8 @@ import java.util.UUID;
 
 public class OnlineControlFragment extends BaseFragment {
     Switch sChannel1, sChannel2, sChannel3, sChannel4;
-    TextView btDate;
+    ImageView imgRefreshDate;
+    TextView txtDate;
     BluetoothAdapter bluetoothAdapter;
     int REQUEST_ENABLE_BT = 10001;
     int REQUEST_BLUETOOTH_CONNECT = 10002;
@@ -64,12 +69,13 @@ public class OnlineControlFragment extends BaseFragment {
         progressDialog.create();
         progressDialog.show();
 
-        sChannel1 = root.findViewById(R.id.switchKanal1);
-        sChannel2 = root.findViewById(R.id.switchKanal2);
-        sChannel3 = root.findViewById(R.id.switchKanal3);
-        sChannel4 = root.findViewById(R.id.switchKanal4);
+        sChannel1 = root.findViewById(R.id.switchChannel1);
+        sChannel2 = root.findViewById(R.id.switchChannel2);
+        sChannel3 = root.findViewById(R.id.switchChannel3);
+        sChannel4 = root.findViewById(R.id.switchChannel4);
 
-        btDate = root.findViewById(R.id.btDate);
+        imgRefreshDate = root.findViewById(R.id.imgRefreshDate);
+        txtDate = root.findViewById(R.id.txtDate);
 
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (!bluetoothAdapter.isEnabled()) {
@@ -90,7 +96,7 @@ public class OnlineControlFragment extends BaseFragment {
                 if (!isConnected) {
                     Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
                     for (BluetoothDevice device : pairedDevices) {
-                        if (device.getName().equals("HC-05")) {
+                        if (device.getName().equals("PTB")) {
                             BluetoothService.connectToDevice(_context, device);
                             break;
                         }
@@ -99,9 +105,13 @@ public class OnlineControlFragment extends BaseFragment {
                 isConnected = BluetoothService.isConnected();
                 if (isConnected) {
                     sChannel1.setEnabled(true);
+                    sChannel1.setThumbTintList(ColorStateList.valueOf(ContextCompat.getColor(_context, R.color.orb_purple)));
                     sChannel2.setEnabled(true);
+                    sChannel2.setThumbTintList(ColorStateList.valueOf(ContextCompat.getColor(_context, R.color.orb_purple)));
                     sChannel3.setEnabled(true);
+                    sChannel3.setThumbTintList(ColorStateList.valueOf(ContextCompat.getColor(_context, R.color.orb_purple)));
                     sChannel4.setEnabled(true);
+                    sChannel4.setThumbTintList(ColorStateList.valueOf(ContextCompat.getColor(_context, R.color.orb_purple)));
 
                     getChannelsStatus();
 
@@ -119,29 +129,39 @@ public class OnlineControlFragment extends BaseFragment {
                         @Override
                         public void onClick(View view) {
                             BluetoothService.sendData(_context, sChannel1.isChecked() ? "A".getBytes() : "a".getBytes());
+                            sChannel1.setText(sChannel1.isChecked() ? "Açık" : "Kapalı");
                         }
                     });
                     sChannel2.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             BluetoothService.sendData(_context, sChannel2.isChecked() ? "B".getBytes() : "b".getBytes());
+                            sChannel2.setText(sChannel2.isChecked() ? "Açık" : "Kapalı");
+
                         }
                     });
                     sChannel3.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             BluetoothService.sendData(_context, sChannel3.isChecked() ? "C".getBytes() : "c".getBytes());
+                            sChannel3.setText(sChannel3.isChecked() ? "Açık" : "Kapalı");
+
                         }
                     });
                     sChannel4.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             BluetoothService.sendData(_context, sChannel4.isChecked() ? "D".getBytes() : "d".getBytes());
+                            sChannel4.setText(sChannel4.isChecked() ? "Açık" : "Kapalı");
+
                         }
                     });
-                    btDate.setOnClickListener(new View.OnClickListener() {
+                    imgRefreshDate.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
+                            Animation rotation = AnimationUtils.loadAnimation(_context, R.anim.rotate);
+                            imgRefreshDate.startAnimation(rotation);
+
                             String sendHexData = "FD";
                             BluetoothService.sendData(_context, IntegerHelper.hexToInt(sendHexData));
                             sendHexData = "F8";
@@ -173,7 +193,7 @@ public class OnlineControlFragment extends BaseFragment {
                                 }
 
                                 //day of week
-                                sendHexData =  StringHelper.repeatString(String.valueOf(calendar.get(Calendar.DAY_OF_WEEK)-1), 2,"0", RepeatStringType.BEFORE);
+                                sendHexData =  StringHelper.repeatString(String.valueOf(calendar.get(Calendar.DAY_OF_WEEK)-1 == 0 ? 7 : calendar.get(Calendar.DAY_OF_WEEK) - 1) , 2,"0", RepeatStringType.BEFORE);
                                 BluetoothService.sendData(_context, IntegerHelper.hexToInt(sendHexData));
                                 receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
                                 if (!receiveHexData.equalsIgnoreCase(sendHexData)){
@@ -214,10 +234,8 @@ public class OnlineControlFragment extends BaseFragment {
                         }
                     });
                     progressDialog.hide();
-                    progressDialog.dismiss();
                 } else {
                     progressDialog.hide();
-                    progressDialog.dismiss();
                     AlertHelper.ShowAlertDialog(_context, AlertType.ERROR,
                             "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!",
                             "Çık",
@@ -263,9 +281,9 @@ public class OnlineControlFragment extends BaseFragment {
 
     public void getDateTime(){
         BluetoothService.sendData(_context, 0xfc);
-        String[] btDateText = BluetoothService.receiveData(_context, 6).split(" ");
-        String dateFormatted = DateHelper.getDateByBluetooth(btDateText);
-        btDate.setText(dateFormatted);
+        String[] txtDateText = BluetoothService.receiveData(_context, 6).split(" ");
+        String dateFormatted = DateHelper.getDateByBluetooth(txtDateText);
+        txtDate.setText(dateFormatted);
     }
     public void getChannelsStatus(){
         BluetoothService.sendData(_context,0xfd);
@@ -277,15 +295,19 @@ public class OnlineControlFragment extends BaseFragment {
         } else {
             if (receiveFFBinary[3] == '1') {
                 sChannel1.setChecked(true);
+                sChannel1.setText("Açık");
             }
             if (receiveFFBinary[2] == '1') {
                 sChannel2.setChecked(true);
+                sChannel2.setText("Açık");
             }
             if (receiveFFBinary[1] == '1') {
                 sChannel3.setChecked(true);
+                sChannel3.setText("Açık");
             }
             if (receiveFFBinary[0] == '1') {
                 sChannel4.setChecked(true);
+                sChannel4.setText("Açık");
             }
         }
     }

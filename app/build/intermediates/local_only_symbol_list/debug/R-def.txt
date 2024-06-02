@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+anim rotate
 color black
 color btn1
 color btn2
@@ -27,12 +28,16 @@ color settings
 drawable bg_button
 drawable bg_edittext
 drawable bg_form
+drawable bg_rounded_corners
+drawable bg_shadow
 drawable bg_track
 drawable ic_bluetooth_24
 drawable ic_bluetooth_connected_24
 drawable ic_bluetooth_disabled_24
 drawable ic_bluetooth_searching_24
+drawable ic_calender
 drawable ic_error_24
+drawable ic_home
 drawable ic_info_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -41,7 +46,9 @@ drawable ic_phone
 drawable ic_phone_128
 drawable ic_plus
 drawable ic_plus_1
+drawable ic_refresh
 drawable ic_right_arrow
+drawable ic_settings
 drawable ic_switch_off
 drawable ic_switch_off_disable
 drawable ic_switch_on
@@ -52,8 +59,7 @@ drawable v_task_128
 font roboto_light
 font roboto_thin
 id action_firstFragment_to_secondFragment
-id bottomBar
-id btDate
+id bottomNavigation
 id btnAddPlan
 id btnDelete
 id btnEdit
@@ -90,9 +96,7 @@ id glDays
 id glEdit
 id guideline_left
 id guideline_right
-id header
-id headerIcon
-id headerText
+id imgRefreshDate
 id item0
 id item1
 id login_layout
@@ -100,12 +104,12 @@ id nav_graph
 id plans
 id progressBar
 id second_fragment
-id splashscreen
-id switchKanal1
-id switchKanal2
-id switchKanal3
-id switchKanal4
-id topLayout
+id switchChannel1
+id switchChannel2
+id switchChannel3
+id switchChannel4
+id txtDate
+id txtTitle
 layout activity_add_plan
 layout activity_main
 layout cardview_plan

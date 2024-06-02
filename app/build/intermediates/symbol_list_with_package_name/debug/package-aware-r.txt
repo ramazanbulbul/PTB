@@ -47,6 +47,7 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim rotate
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -885,10 +886,28 @@ attr maxLines
 attr maxNumber
 attr maxVelocity
 attr maxWidth
+attr mbn_backgroundBottomColor
+attr mbn_circleColor
+attr mbn_countBackgroundColor
+attr mbn_countTextColor
+attr mbn_countTypeface
+attr mbn_defaultIconColor
+attr mbn_rippleColor
+attr mbn_selectedIconColor
+attr mbn_shadowColor
 attr measureWithLargestChild
 attr menu
 attr menuAlignmentMode
 attr menuGravity
+attr meow_imageview_actionBackgroundAlpha
+attr meow_imageview_changeSize
+attr meow_imageview_color
+attr meow_imageview_fitImage
+attr meow_imageview_isAction
+attr meow_imageview_isBitmap
+attr meow_imageview_resource
+attr meow_imageview_size
+attr meow_imageview_useColor
 attr methodName
 attr mimeType
 attr minHeight
@@ -3048,6 +3067,8 @@ drawable avd_show_password
 drawable bg_button
 drawable bg_edittext
 drawable bg_form
+drawable bg_rounded_corners
+drawable bg_shadow
 drawable bg_track
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3067,9 +3088,11 @@ drawable ic_bluetooth_24
 drawable ic_bluetooth_connected_24
 drawable ic_bluetooth_disabled_24
 drawable ic_bluetooth_searching_24
+drawable ic_calender
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_error_24
+drawable ic_home
 drawable ic_info_24
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -3086,8 +3109,10 @@ drawable ic_phone
 drawable ic_phone_128
 drawable ic_plus
 drawable ic_plus_1
+drawable ic_refresh
 drawable ic_right_arrow
 drawable ic_search_black_24
+drawable ic_settings
 drawable ic_switch_off
 drawable ic_switch_off_disable
 drawable ic_switch_on
@@ -3267,12 +3292,11 @@ id beginning
 id bestChoice
 id blocking
 id bottom
-id bottomBar
+id bottomNavigation
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btDate
 id btnAddPlan
 id btnDelete
 id btnEdit
@@ -3398,6 +3422,7 @@ id fitStart
 id fitToContents
 id fitXY
 id fixed
+id fl
 id flip
 id floating
 id forever
@@ -3417,9 +3442,6 @@ id grouping
 id groups
 id guideline_left
 id guideline_right
-id header
-id headerIcon
-id headerText
 id header_title
 id hideable
 id home
@@ -3432,6 +3454,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgRefreshDate
 id immediateStop
 id included
 id indeterminate
@@ -3442,6 +3465,7 @@ id italic
 id item0
 id item1
 id item_touch_helper_previous_elevation
+id iv
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3632,7 +3656,6 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
-id splashscreen
 id spline
 id split_action_bar
 id spread
@@ -3654,10 +3677,10 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
-id switchKanal1
-id switchKanal2
-id switchKanal3
-id switchKanal4
+id switchChannel1
+id switchChannel2
+id switchChannel3
+id switchChannel4
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3694,7 +3717,6 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id top
-id topLayout
 id topPanel
 id touch_outside
 id transitionToEnd
@@ -3705,11 +3727,15 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_count
+id txtDate
+id txtTitle
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
+id v_circle
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3883,6 +3909,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout meow_navigation_cell
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -5249,6 +5276,7 @@ styleable ButtonBarLayout allowStacking
 styleable Capability queryPatterns shortcutMatchRequired
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Carousel carousel_alignment carousel_backwardTransition carousel_emptyViewsBehavior carousel_firstView carousel_forwardTransition carousel_infinite carousel_nextState carousel_previousState carousel_touchUpMode carousel_touchUp_dampeningFactor carousel_touchUp_velocityThreshold
+styleable CellImageView meow_imageview_actionBackgroundAlpha meow_imageview_changeSize meow_imageview_color meow_imageview_fitImage meow_imageview_isAction meow_imageview_isBitmap meow_imageview_resource meow_imageview_size meow_imageview_useColor
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
@@ -5320,6 +5348,7 @@ styleable MaterialToolbar logoAdjustViewBounds logoScaleType navigationIconTint 
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
+styleable MeowBottomNavigation mbn_backgroundBottomColor mbn_circleColor mbn_countBackgroundColor mbn_countTextColor mbn_countTypeface mbn_defaultIconColor mbn_rippleColor mbn_selectedIconColor mbn_shadowColor
 styleable MockView mock_diagonalsColor mock_label mock_labelBackgroundColor mock_labelColor mock_showDiagonals mock_showLabel
 styleable Motion animateCircleAngleTo animateRelativeTo drawPath motionPathRotate motionStagger pathMotionArc quantizeMotionInterpolator quantizeMotionPhase quantizeMotionSteps transitionEasing
 styleable MotionEffect motionEffect_alpha motionEffect_end motionEffect_move motionEffect_start motionEffect_strict motionEffect_translationX motionEffect_translationY motionEffect_viewTransition

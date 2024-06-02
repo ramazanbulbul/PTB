@@ -4,7 +4,8 @@ ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidMani
 INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-49:12
 INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-49:12
 INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-49:12
-MERGED from [com.github.ibrahimsn98:SmoothBottomBar:1.7.6] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\9f52b47d67ae106bdbb8a470335eb425\transformed\SmoothBottomBar-1.7.6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.ibrahimsn98:SmoothBottomBar:1.7.6] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\226581e42885c709e910938583893398\transformed\jetified-SmoothBottomBar-1.7.6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.etebarian:meow-bottom-navigation:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ca5b81b986fc74a8d502964df6b0c164\transformed\jetified-meow-bottom-navigation-1.2.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0ceb6a5bf1f0017e32227c0a87cd9130\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\434a0ab9cd0bdb1f7b392b2b369e9011\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\4ce6169070e45cd9f3d300dd10b50019\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
@@ -15,19 +16,19 @@ MERGED from [androidx.navigation:navigation-fragment:2.7.7] C:\Users\ramazan.bul
 MERGED from [androidx.navigation:navigation-ui:2.7.7] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0b1810434caf8031fea9ab45acbb7ac0\transformed\navigation-ui-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\99dc24b8086e9e02f60cbc0643cdc897\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1f371f754bd6786f9a76f8e2fd18482b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\dd8395924473b069ee7a6f1edc69d57d\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6bb17d2c54c905aa7b0c5b5bfe3537f3\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\60f9bab79c5ba5b4c82ae8c6a17130c1\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\882b4d6e8ecea429da5fee5c5c9c2885\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\88ea4c74b3a5ae7c32a2439dcf9803ae\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\7cbbfa323145c4a8af35037eccaa79c1\transformed\fragment-1.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\aacc7c96212e032929005a4538144203\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d42ca139b35f32432e0bad02adaf478b\transformed\activity-1.8.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\c6b2f64beee34d72cd8e23d5fe45208a\transformed\activity-ktx-1.8.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cee27ffb1c282f656a466821fd8b1181\transformed\jetified-fragment-ktx-1.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\f36c10b960f5b2526fd55c97c3e65d18\transformed\jetified-activity-1.8.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2d7e6162f1d18b9d328fe633ed0ce174\transformed\jetified-activity-ktx-1.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\b6ccaaa51a50af81f5e8f08253475fc5\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6223ac4d51f7090ffd0876482500d5d4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\00aa9a3069e0cde8b054557f0ce2818e\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\c1ce6595fe597b42236e7b2d3ed66830\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a0783a4aad1423c640df7fa1ce730c6c\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2bf11688399e0e42f9f39eb86872df6c\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6bc5fbbfad7e5749cd122c3e879c81d2\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\01514ef49aaa7837d36b13f65ba089f4\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46f0d30776f6c01a97124eeedf1d5fb3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e6a92957c41119f7d421c0119c2e6f34\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -36,32 +37,32 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\ramaza
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e3eef4b78bf0d50dbb2eee57d07da5bb\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ecc01097548ca6b1d9bda4d78f8f9e78\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\f3004bc0d13090489f4b82fd180e5c78\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\74a90bc978a3a5072315d6846eab8a67\transformed\core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a0baff7496d240c2cf119a43294311e0\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ba698d669010fa26efab75ea62777f03\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.core:core:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\de0a79426537bc30478e4261ecfcfdf9\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\289337fbfc1ed0a8a35e86227f98c4ce\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6f9aa36c43a8dc454852da0b2484fd38\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a5a165c2382b870157193df65557f043\transformed\jetified-lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\52d3a89c3ef0b4451c346b9b328169ef\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\051b1dbb4ecc4ccef673c861288d893e\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e5f02973c17037b0afe8170a4ee09dd5\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a9ced7b282e37c275616894054e9dcbb\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\b4d22ef2e4390daa322629ffd6c7ce91\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\bc1b828ea237532e668ca72c49e28a0a\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6f49c4d167d1b3a800cfd1626aa990da\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\676dd586bd70d2a9cff64c5bc6759058\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\69b5426fa45aa2868e75d71a19a23a79\transformed\jetified-lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\67a8436a3dd3f80ad9b5053cd1228727\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc5864e7246f1915b286166ab44dd839\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ab620463462e0f419f905989207689fa\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ec2eb3840be362e74ab25570b26da47c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc2fd32867bc89441d11193b7ce32ccb\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\8424447ca8cab46658edeeaf48126906\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\24db1386d79965021d8e5a91151d1bb2\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\633c9dafa3386bc591784c10361b7df0\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\04b9300f1b6b6f317cfdfa2969044fa2\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\225b7cf18fe920e654bd761ce8f186d2\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2e49548e557ad3d981e0f53424b0c757\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\26cba1aa8eac156f95f722a31a02fb2f\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2dc81d4b15c8e076c83c13b022c1ba02\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\370dc6df9c1ddfc3c2f9320d443702d0\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\4e507413af5f3d3f2ccec8faf9fb58f3\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 	package
 		INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -101,20 +102,20 @@ MERGED from [com.google.android.material:material:1.11.0] C:\Users\ramazan.bulbu
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\99dc24b8086e9e02f60cbc0643cdc897\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1f371f754bd6786f9a76f8e2fd18482b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1f371f754bd6786f9a76f8e2fd18482b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
-MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
-MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ec2eb3840be362e74ab25570b26da47c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ec2eb3840be362e74ab25570b26da47c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc2fd32867bc89441d11193b7ce32ccb\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc2fd32867bc89441d11193b7ce32ccb\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\24db1386d79965021d8e5a91151d1bb2\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\24db1386d79965021d8e5a91151d1bb2\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
 		INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
@@ -189,8 +190,10 @@ uses-sdk
 INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml
-MERGED from [com.github.ibrahimsn98:SmoothBottomBar:1.7.6] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\9f52b47d67ae106bdbb8a470335eb425\transformed\SmoothBottomBar-1.7.6\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.ibrahimsn98:SmoothBottomBar:1.7.6] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\9f52b47d67ae106bdbb8a470335eb425\transformed\SmoothBottomBar-1.7.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.ibrahimsn98:SmoothBottomBar:1.7.6] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\226581e42885c709e910938583893398\transformed\jetified-SmoothBottomBar-1.7.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.ibrahimsn98:SmoothBottomBar:1.7.6] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\226581e42885c709e910938583893398\transformed\jetified-SmoothBottomBar-1.7.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.etebarian:meow-bottom-navigation:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ca5b81b986fc74a8d502964df6b0c164\transformed\jetified-meow-bottom-navigation-1.2.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.etebarian:meow-bottom-navigation:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ca5b81b986fc74a8d502964df6b0c164\transformed\jetified-meow-bottom-navigation-1.2.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0ceb6a5bf1f0017e32227c0a87cd9130\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0ceb6a5bf1f0017e32227c0a87cd9130\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\434a0ab9cd0bdb1f7b392b2b369e9011\transformed\navigation-common-2.7.7\AndroidManifest.xml:20:5-44
@@ -211,32 +214,32 @@ MERGED from [com.google.android.material:material:1.11.0] C:\Users\ramazan.bulbu
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\99dc24b8086e9e02f60cbc0643cdc897\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1f371f754bd6786f9a76f8e2fd18482b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1f371f754bd6786f9a76f8e2fd18482b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\dd8395924473b069ee7a6f1edc69d57d\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\dd8395924473b069ee7a6f1edc69d57d\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6bb17d2c54c905aa7b0c5b5bfe3537f3\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6bb17d2c54c905aa7b0c5b5bfe3537f3\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\60f9bab79c5ba5b4c82ae8c6a17130c1\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\60f9bab79c5ba5b4c82ae8c6a17130c1\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\882b4d6e8ecea429da5fee5c5c9c2885\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\882b4d6e8ecea429da5fee5c5c9c2885\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\88ea4c74b3a5ae7c32a2439dcf9803ae\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\88ea4c74b3a5ae7c32a2439dcf9803ae\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\7cbbfa323145c4a8af35037eccaa79c1\transformed\fragment-1.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\7cbbfa323145c4a8af35037eccaa79c1\transformed\fragment-1.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\aacc7c96212e032929005a4538144203\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\aacc7c96212e032929005a4538144203\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d42ca139b35f32432e0bad02adaf478b\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d42ca139b35f32432e0bad02adaf478b\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\c6b2f64beee34d72cd8e23d5fe45208a\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\c6b2f64beee34d72cd8e23d5fe45208a\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cee27ffb1c282f656a466821fd8b1181\transformed\jetified-fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cee27ffb1c282f656a466821fd8b1181\transformed\jetified-fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\f36c10b960f5b2526fd55c97c3e65d18\transformed\jetified-activity-1.8.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\f36c10b960f5b2526fd55c97c3e65d18\transformed\jetified-activity-1.8.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2d7e6162f1d18b9d328fe633ed0ce174\transformed\jetified-activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2d7e6162f1d18b9d328fe633ed0ce174\transformed\jetified-activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\b6ccaaa51a50af81f5e8f08253475fc5\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\b6ccaaa51a50af81f5e8f08253475fc5\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6223ac4d51f7090ffd0876482500d5d4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6223ac4d51f7090ffd0876482500d5d4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\00aa9a3069e0cde8b054557f0ce2818e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\00aa9a3069e0cde8b054557f0ce2818e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\c1ce6595fe597b42236e7b2d3ed66830\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\c1ce6595fe597b42236e7b2d3ed66830\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a0783a4aad1423c640df7fa1ce730c6c\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a0783a4aad1423c640df7fa1ce730c6c\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2bf11688399e0e42f9f39eb86872df6c\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2bf11688399e0e42f9f39eb86872df6c\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6bc5fbbfad7e5749cd122c3e879c81d2\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6bc5fbbfad7e5749cd122c3e879c81d2\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\01514ef49aaa7837d36b13f65ba089f4\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\01514ef49aaa7837d36b13f65ba089f4\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46f0d30776f6c01a97124eeedf1d5fb3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -253,46 +256,46 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ramazan.bulbul\.gradle
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ecc01097548ca6b1d9bda4d78f8f9e78\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\f3004bc0d13090489f4b82fd180e5c78\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\f3004bc0d13090489f4b82fd180e5c78\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\74a90bc978a3a5072315d6846eab8a67\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\74a90bc978a3a5072315d6846eab8a67\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a0baff7496d240c2cf119a43294311e0\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a0baff7496d240c2cf119a43294311e0\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ba698d669010fa26efab75ea62777f03\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ba698d669010fa26efab75ea62777f03\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\de0a79426537bc30478e4261ecfcfdf9\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\de0a79426537bc30478e4261ecfcfdf9\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\289337fbfc1ed0a8a35e86227f98c4ce\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\289337fbfc1ed0a8a35e86227f98c4ce\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6f9aa36c43a8dc454852da0b2484fd38\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6f9aa36c43a8dc454852da0b2484fd38\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a5a165c2382b870157193df65557f043\transformed\jetified-lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a5a165c2382b870157193df65557f043\transformed\jetified-lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\52d3a89c3ef0b4451c346b9b328169ef\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\52d3a89c3ef0b4451c346b9b328169ef\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\051b1dbb4ecc4ccef673c861288d893e\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\051b1dbb4ecc4ccef673c861288d893e\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e5f02973c17037b0afe8170a4ee09dd5\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e5f02973c17037b0afe8170a4ee09dd5\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a9ced7b282e37c275616894054e9dcbb\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a9ced7b282e37c275616894054e9dcbb\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\b4d22ef2e4390daa322629ffd6c7ce91\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\b4d22ef2e4390daa322629ffd6c7ce91\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\bc1b828ea237532e668ca72c49e28a0a\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\bc1b828ea237532e668ca72c49e28a0a\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6f49c4d167d1b3a800cfd1626aa990da\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6f49c4d167d1b3a800cfd1626aa990da\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\676dd586bd70d2a9cff64c5bc6759058\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\676dd586bd70d2a9cff64c5bc6759058\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\69b5426fa45aa2868e75d71a19a23a79\transformed\jetified-lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\69b5426fa45aa2868e75d71a19a23a79\transformed\jetified-lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\67a8436a3dd3f80ad9b5053cd1228727\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\67a8436a3dd3f80ad9b5053cd1228727\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc5864e7246f1915b286166ab44dd839\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc5864e7246f1915b286166ab44dd839\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ab620463462e0f419f905989207689fa\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ab620463462e0f419f905989207689fa\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ec2eb3840be362e74ab25570b26da47c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ec2eb3840be362e74ab25570b26da47c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc2fd32867bc89441d11193b7ce32ccb\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc2fd32867bc89441d11193b7ce32ccb\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\8424447ca8cab46658edeeaf48126906\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\8424447ca8cab46658edeeaf48126906\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\24db1386d79965021d8e5a91151d1bb2\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\24db1386d79965021d8e5a91151d1bb2\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\633c9dafa3386bc591784c10361b7df0\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\633c9dafa3386bc591784c10361b7df0\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\04b9300f1b6b6f317cfdfa2969044fa2\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\04b9300f1b6b6f317cfdfa2969044fa2\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\225b7cf18fe920e654bd761ce8f186d2\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -303,46 +306,46 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\
 MERGED from [androidx.print:print:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\26cba1aa8eac156f95f722a31a02fb2f\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2dc81d4b15c8e076c83c13b022c1ba02\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2dc81d4b15c8e076c83c13b022c1ba02\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\370dc6df9c1ddfc3c2f9320d443702d0\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\370dc6df9c1ddfc3c2f9320d443702d0\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\4e507413af5f3d3f2ccec8faf9fb58f3\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\4e507413af5f3d3f2ccec8faf9fb58f3\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
 		INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc2fd32867bc89441d11193b7ce32ccb\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc2fd32867bc89441d11193b7ce32ccb\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\24db1386d79965021d8e5a91151d1bb2\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\24db1386d79965021d8e5a91151d1bb2\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\70145bbbde0c2efc56f871bf5a5b1060\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
 uses-library#androidx.window.extensions
-ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
 	android:required
-		ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+		ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+		ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
 uses-library#androidx.window.sidecar
-ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
 	android:required
-		ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+		ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\e609815b7b43c1bb652de7bb51719624\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+		ADDED from [androidx.window:window:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1ea1c0b7cdf4f9e4361e565038f6c965\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
@@ -364,50 +367,50 @@ ADDED from [androidx.core:core:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\tra
 	android:name
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\46a1331dd75cc60284dddddb1d8da918\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\d39e07d29f8b10790dd408c3fd7de1b4\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0e99719c1721f1142b26db9093362a76\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92

@@ -4,63 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.MainActivity"
-    android:background="@color/orb_gray">
-    <RelativeLayout
-        android:id="@+id/header"
-        android:background="@color/colorPrimaryDark"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
-        <ImageView
-            android:id="@+id/headerIcon"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:src="@drawable/ic_bluetooth_disabled_24"
-            android:foregroundGravity="center"
-            android:visibility="visible"/>
-        <TextView
-            android:id="@+id/headerText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/roboto_light"
-            android:text="PTB"
-            android:textSize="28sp"
-            android:gravity="center"
-            android:textColor="@color/colorPrimary"
-            android:visibility="invisible"
-            />
-    </RelativeLayout>
+    android:background="@color/orb_gray"
+    tools:context=".main.MainActivity">
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/header"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:background="@color/colorPrimaryDark"-->
+    <!--        android:gravity="center"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:ignore="MissingConstraints">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/headerIcon"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:foregroundGravity="center"-->
+    <!--            android:src="@drawable/ic_bluetooth_disabled_24"-->
+    <!--            android:visibility="visible" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/headerText"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:fontFamily="@font/roboto_light"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="PTB"-->
+    <!--            android:textColor="@color/colorPrimary"-->
+    <!--            android:textSize="28sp"-->
+    <!--            android:visibility="invisible" />-->
+    <!--    </RelativeLayout>-->
 
     <LinearLayout
         android:id="@+id/fragment"
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="vertical" />
-    <me.ibrahimsn.lib.SmoothBottomBar
-        android:id="@+id/bottomBar"
+
+    <!--    <me.ibrahimsn.lib.SmoothBottomBar-->
+    <!--        android:id="@+id/bottomBar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        app:backgroundColor="@color/colorPrimary"-->
+    <!--        app:iconSize="24dp"-->
+    <!--        app:indicatorColor="@color/colorSecondary"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:menu="@menu/bottommenu"-->
+    <!--        app:textSize="14dp"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:textSize="14dp"
-        app:iconSize="24dp"
-        app:backgroundColor="@color/colorPrimary"
-        app:indicatorColor="@color/colorSecondary"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottommenu"
-        tools:ignore="MissingConstraints" />
+        app:mbn_backgroundBottomColor="@color/orb_purple"
+        app:mbn_circleColor="#ffffff"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_countTextColor="#ffffff"
+        app:mbn_defaultIconColor="#fff"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="@color/orb_purple"
+        app:mbn_shadowColor="@color/orb_gray" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="175dp"
         android:layout_gravity="center"
-        android:visibility="gone"
-        tools:ignore="MissingConstraints" />
+        android:layout_margin="175dp"
+        android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

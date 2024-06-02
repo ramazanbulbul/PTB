@@ -1,171 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout
-        android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PTB"
+        android:textSize="35sp"
+        android:textColor="@color/orb_purple"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="64dp"
+        android:paddingTop="32dp"
+        android:textStyle="bold"
+        />
+
+    <!-- Date and Time View -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="145dp"
-        tools:ignore="MissingConstraints">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:layout_marginBottom="96dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/bg_rounded_corners">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_calender"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="8dp" />
 
         <TextView
-            android:id="@+id/btDate"
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26.05.2024\nPazar 15.53"
+            android:textSize="20sp"
+            android:textColor="@color/orb_purple"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:id="@+id/imgRefreshDate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_refresh"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="8dp"/>
+    </LinearLayout>
+
+    <!-- Switches Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/bg_rounded_corners"
+        android:elevation="4dp"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Channel 1 -->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/colorPrimary"
-            android:fontFamily="@font/roboto_light"
-            android:text=""
-            android:textColor="#fff"
-            android:textSize="28sp"
-            android:layout_marginTop="45dp"
-            android:gravity="center"
-            />
-    </RelativeLayout>
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:rowCount="4"
-        android:columnCount="2"
-        app:layout_constraintTop_toBottomOf="@id/topLayout"
-        >
-        <TextView
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
-        <TextView
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:text="1"
-            android:gravity="center"
-            android:layout_margin="20dp"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_light"
-                android:textSize="25sp"
-                android:textColor="@color/black"
-                android:gravity="center"
-                android:text="1. Kanal"
-                />
-            <Switch
-                android:id="@+id/switchKanal1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:track="@drawable/bg_track"
-                android:thumb="@drawable/ic_thumb_512"
-                android:scaleX="3"
-                android:scaleY="3"
-                android:checked="false"
-                android:enabled="false"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
-        </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingVertical="8dp"
+            android:background="@drawable/bg_shadow">
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:text="2"
-            android:gravity="center"
-            android:layout_margin="20dp"
-            >
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_light"
-                android:textSize="25sp"
-                android:textColor="@color/black"
-                android:gravity="center"
-                android:text="2. Kanal"
-                />
-            <Switch
-                android:id="@+id/switchKanal2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:track="@drawable/bg_track"
-                android:thumb="@drawable/ic_thumb_512"
-                android:scaleX="3"
-                android:scaleY="3"
-                android:checked="false"
-                android:enabled="false"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
-        </RelativeLayout>
+                android:layout_weight="1"
+                android:text="1.Kanal"
+                android:textSize="22dp"
+                android:textColor="@color/orb_purple"/>
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:text="3"
-            android:gravity="center"
-            android:layout_margin="20dp"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_light"
-                android:textSize="25sp"
-                android:textColor="@color/black"
-                android:gravity="center"
-                android:text="3. Kanal"
-                />
             <Switch
-                android:id="@+id/switchKanal3"
+                android:id="@+id/switchChannel1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:track="@drawable/bg_track"
-                android:thumb="@drawable/ic_thumb_512"
-                android:scaleX="3"
-                android:scaleY="3"
+                android:layout_height="match_parent"
+                android:text="Kapalı"
+                android:textColor="@color/orb_purple"
                 android:checked="false"
-                android:enabled="false"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
-        </RelativeLayout>
+                android:thumbTint="@color/orb_gray"
+                android:trackTint="#D1C4E9"
+                android:enabled="false"/>
+        </LinearLayout>
+        <!-- Channel 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingVertical="8dp"
+            android:background="@drawable/bg_shadow">
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:gravity="center"
-            android:layout_margin="20dp">
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_light"
-                android:textSize="25sp"
-                android:textColor="@color/black"
-                android:gravity="center"
-                android:text="4. Kanal"
-                />
+                android:layout_weight="1"
+                android:text="2.Kanal"
+                android:textSize="22dp"
+                android:textColor="@color/orb_purple" />
+
             <Switch
-                android:id="@+id/switchKanal4"
+                android:id="@+id/switchChannel2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:track="@drawable/bg_track"
-                android:thumb="@drawable/ic_thumb_512"
-                android:scaleX="3"
-                android:scaleY="3"
+                android:layout_height="match_parent"
+                android:text="Kapalı"
+                android:textColor="@color/orb_purple"
                 android:checked="false"
-                android:enabled="false"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
-        </RelativeLayout>
-        <TextView
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
-        <TextView
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
-    </GridLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                android:thumbTint="@color/orb_gray"
+                android:trackTint="#D1C4E9"
+                android:enabled="false"/>
+        </LinearLayout>
+        <!-- Channel 4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingVertical="8dp"
+            android:background="@drawable/bg_shadow">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3.Kanal"
+                android:textSize="22dp"
+                android:textColor="@color/orb_purple"/>
+
+            <Switch
+                android:id="@+id/switchChannel3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Kapalı"
+                android:textColor="@color/orb_purple"
+                android:checked="false"
+                android:thumbTint="@color/orb_gray"
+                android:trackTint="#D1C4E9"
+                android:enabled="false"/>
+        </LinearLayout>
+        <!-- Channel 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingVertical="8dp"
+            android:background="@drawable/bg_shadow">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4.Kanal"
+                android:textSize="22dp"
+                android:textColor="@color/orb_purple"/>
+
+            <Switch
+                android:id="@+id/switchChannel4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Kapalı"
+                android:textColor="@color/orb_purple"
+                android:checked="false"
+                android:thumbTint="@color/orb_gray"
+                android:trackTint="#D1C4E9"
+                android:enabled="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
