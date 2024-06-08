@@ -7,171 +7,162 @@
     android:layout_margin="8dp"
     app:cardCornerRadius="15dp">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/loPlan"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:background="@drawable/bg_button"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:background="@drawable/bg_rounded_corners"
+        >
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/cvPlanName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_alignParentStart="true"
+            android:text="1.Plan"
+            android:textSize="18sp"
+            android:textColor="@color/orb_black"/>
 
-            <LinearLayout
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorSecondary"
+            android:src="@drawable/ic_close" />
+
+        <LinearLayout
+            android:id="@+id/loDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvPlanName"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gün: "
+                android:textColor="@color/orb_black"/>
+
+            <Spinner
+                android:id="@+id/cvDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/orb_black"
+                android:layout_centerInParent="true"/>
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/cvPlanName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginTop="0dp"
-                    android:gravity="center"
-                    android:padding="2dp"
-                    android:text="Plan 1"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loDay"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:rowCount="1"
-                android:columnCount="3">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Başlangıç: "
+                android:textColor="@color/orb_black"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginTop="0dp"
-                        android:padding="2dp"
-                        android:text="Gün :"
-                        android:textSize="18dp"
-                        android:textStyle="bold" />
+            <EditText
+                android:id="@+id/cvStartDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:focusable="false"
+                android:hint="00:00"
+                android:inputType="text|time"
+                android:textColor="@color/orb_black"/>
 
-                    <TextView
-                        android:id="@+id/cvDate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginTop="0dp"
-                        android:padding="2dp"
-                        android:text="Pazartesi"
-                        android:textSize="18dp"
-                        android:textStyle="italic" />
-                </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Bitiş: "
+                android:textColor="@color/orb_black"/>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+            <EditText
+                android:id="@+id/cvEndDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:focusable="false"
+                android:hint="00:00"
+                android:inputType="text|time"
+                android:textColor="@color/orb_black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loChannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loTime"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginTop="0dp"
-                        android:padding="2dp"
-                        android:text="Başlangıç :"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/cvStartDate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginTop="0dp"
-                        android:padding="2dp"
-                        android:text="12:30"
-                        android:textSize="16dp"
-                        android:textStyle="italic" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="3dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginTop="0dp"
-                        android:padding="2dp"
-                        android:text="Bitiş :"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/cvEndDate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginTop="0dp"
-                        android:padding="2dp"
-                        android:text="13:00"
-                        android:textSize="16dp"
-                        android:textStyle="italic" />
-                </LinearLayout>
-            </GridLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kanal Seçimi: "
+                android:textColor="@color/orb_black"/>
 
             <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:rowCount="1"
-                android:columnCount="4">
+                android:columnCount="2"
+                android:rowCount="2">
 
-                <ImageView
-                    android:id="@+id/cvChannel1"
+                <CheckBox
+                    android:id="@+id/cbChannel1"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_switch_on" />
+                    android:background="@drawable/bg_button"
+                    android:text="Kanal 1"
+                    android:textColor="@color/orb_black"/>
 
-                <ImageView
-                    android:id="@+id/cvChannel2"
+                <CheckBox
+                    android:id="@+id/cbChannel2"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_switch_on" />
+                    android:background="@drawable/bg_button"
+                    android:text="Kanal 2"
+                    android:textColor="@color/orb_black"/>
 
-                <ImageView
-                    android:id="@+id/cvChannel3"
+                <CheckBox
+                    android:id="@+id/cbChannel3"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_switch_off" />
+                    android:background="@drawable/bg_button"
+                    android:text="Kanal 3"
+                    android:textColor="@color/orb_black"/>
 
-                <ImageView
-                    android:id="@+id/cvChannel4"
+                <CheckBox
+                    android:id="@+id/cbChannel4"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_switch_off" />
-
+                    android:background="@drawable/bg_button"
+                    android:text="Kanal 4"
+                    android:textColor="@color/orb_black"/>
             </GridLayout>
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>

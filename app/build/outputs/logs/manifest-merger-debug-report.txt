@@ -18,6 +18,7 @@ MERGED from [com.google.android.material:material:1.11.0] C:\Users\ramazan.bulbu
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1f371f754bd6786f9a76f8e2fd18482b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6bb17d2c54c905aa7b0c5b5bfe3537f3\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\60f9bab79c5ba5b4c82ae8c6a17130c1\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ef2e73dce5fe3e69ace0832f4c416a32\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\88ea4c74b3a5ae7c32a2439dcf9803ae\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\7cbbfa323145c4a8af35037eccaa79c1\transformed\fragment-1.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cee27ffb1c282f656a466821fd8b1181\transformed\jetified-fragment-ktx-1.6.2\AndroidManifest.xml:17:1-22:12
@@ -53,11 +54,11 @@ MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\ramazan.bu
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\67a8436a3dd3f80ad9b5053cd1228727\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc5864e7246f1915b286166ab44dd839\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ab620463462e0f419f905989207689fa\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\04b9300f1b6b6f317cfdfa2969044fa2\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ec2eb3840be362e74ab25570b26da47c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\24db1386d79965021d8e5a91151d1bb2\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\633c9dafa3386bc591784c10361b7df0\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\04b9300f1b6b6f317cfdfa2969044fa2\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\225b7cf18fe920e654bd761ce8f186d2\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2e49548e557ad3d981e0f53424b0c757\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\26cba1aa8eac156f95f722a31a02fb2f\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -218,6 +219,8 @@ MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ramazan.bulb
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\6bb17d2c54c905aa7b0c5b5bfe3537f3\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\60f9bab79c5ba5b4c82ae8c6a17130c1\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\60f9bab79c5ba5b4c82ae8c6a17130c1\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ef2e73dce5fe3e69ace0832f4c416a32\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ef2e73dce5fe3e69ace0832f4c416a32\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\88ea4c74b3a5ae7c32a2439dcf9803ae\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\88ea4c74b3a5ae7c32a2439dcf9803ae\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.6.2] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\7cbbfa323145c4a8af35037eccaa79c1\transformed\fragment-1.6.2\AndroidManifest.xml:20:5-44
@@ -288,6 +291,8 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ramazan.bulbul
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\cc5864e7246f1915b286166ab44dd839\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ab620463462e0f419f905989207689fa\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ab620463462e0f419f905989207689fa\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\04b9300f1b6b6f317cfdfa2969044fa2\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\04b9300f1b6b6f317cfdfa2969044fa2\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ec2eb3840be362e74ab25570b26da47c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ec2eb3840be362e74ab25570b26da47c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
@@ -296,8 +301,6 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gr
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\24db1386d79965021d8e5a91151d1bb2\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\633c9dafa3386bc591784c10361b7df0\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\633c9dafa3386bc591784c10361b7df0\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\04b9300f1b6b6f317cfdfa2969044fa2\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\04b9300f1b6b6f317cfdfa2969044fa2\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\225b7cf18fe920e654bd761ce8f186d2\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\225b7cf18fe920e654bd761ce8f186d2\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\2e49548e557ad3d981e0f53424b0c757\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44

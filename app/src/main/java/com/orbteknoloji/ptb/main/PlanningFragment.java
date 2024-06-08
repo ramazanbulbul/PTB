@@ -15,11 +15,17 @@ import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Spinner;
 
+import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.orbteknoloji.ptb.BaseFragment;
@@ -35,10 +41,11 @@ import com.orbteknoloji.ptb.listeners.CustomClickListener;
 import com.orbteknoloji.ptb.models.PlanModel;
 import com.orbteknoloji.ptb.services.BluetoothService;
 
+import java.util.Calendar;
 import java.util.Set;
 
 public class PlanningFragment extends BaseFragment {
-    FloatingActionButton btnAddPlan;
+    Button btnAddPlan;
     FloatingActionButton btnSendPlan;
     private Handler handler;
     private Runnable runnable;
@@ -47,8 +54,12 @@ public class PlanningFragment extends BaseFragment {
     int REQUEST_BLUETOOTH_CONNECT = 10002;
 
     boolean _isUpdate = false;
+    PlanAdapter planAdapter;
+    RecyclerView rvPlans;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
-    public PlanningFragment(boolean isUpdate){
+
+    public PlanningFragment(boolean isUpdate) {
         _isUpdate = isUpdate;
     }
 
@@ -59,14 +70,17 @@ public class PlanningFragment extends BaseFragment {
         _activity = getActivity();
         btnAddPlan = root.findViewById(R.id.btnAddPlan);
         btnSendPlan = root.findViewById(R.id.btnSendPlan);
+        planAdapter = new PlanAdapter(TempDatabase.plans);
+        rvPlans = root.findViewById(R.id.plans);
+        swipeRefreshLayout = root.findViewById(R.id.swipe_refresh_layout);
 
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshContent();
+            }
+        });
         btnSendPlan.setVisibility(View.GONE);
-
-        ProgressDialog progressDialog = new ProgressDialog(_context);
-        progressDialog.setMessage("Yükleniyor...");
-        progressDialog.setCancelable(false);
-        progressDialog.create();
-        progressDialog.show();
 
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (!bluetoothAdapter.isEnabled()) {
@@ -78,36 +92,64 @@ public class PlanningFragment extends BaseFragment {
                 ActivityCompat.requestPermissions(_activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, REQUEST_BLUETOOTH_CONNECT);
             }
         }
-
-        CustomClickListener customClickListener = new CustomClickListener() {
-            @Override
-            public void onDoubleClick(View v, int position) {
-
-            }
-
-            @Override
-            public void onSingleClick(View v, int position) {
-                Intent intent = new Intent(getActivity().getApplicationContext(), AddPlanActivity.class);
-                intent.putExtra("PlanId", v.getTag().toString());
-                if (handler != null) handler.removeCallbacks(runnable);
-                startActivity(intent);
-            }
-        };
         btnAddPlan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity().getApplicationContext(), AddPlanActivity.class);
-                intent.putExtra("PlanId", "0");
-                if (handler != null) handler.removeCallbacks(runnable);
-                startActivity(intent);
+                if (TempDatabase.plans.size() >= 25){
+                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Sınıra ulaşıldı", "Maksimum plan sayısına ulaştınız!");
+                }
+                PlanModel planModel = new PlanModel();
+                planModel.setPlanName(planAdapter.getItemCount() + 1 + ". Plan");
+                planModel.setDate(Calendar.getInstance().get(Calendar.DAY_OF_WEEK) - 1 == 0 ? 7 : Calendar.getInstance().get(Calendar.DAY_OF_WEEK) - 1);
+                planAdapter.addItem(planModel);
+                rvPlans.scrollToPosition(planAdapter.getItemCount() - 1);
             }
         });
         btnSendPlan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                TempDatabase.clearPlan();
+                for (int i = 0; i < rvPlans.getChildCount(); i++) {
+                    View v = rvPlans.getChildAt(i);
+                    if (((Spinner)v.findViewById(R.id.cvDate)).getSelectedItemPosition() == 0){
+                        AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Eksik Bilgi(" + (i+1) + ". Plan)", "Gün bilgisi boş bırakılamaz!", "Tamam", null);
+                        return;
+                    }
+                    if (((EditText) v.findViewById(R.id.cvStartDate)).getText().toString().isEmpty()){
+                        AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Eksik Bilgi(" + (i+1) + ". Plan)", "Başlangıç saati bilgisi boş bırakılamaz!", "Tamam", null);
+                        return;
+                    }
+                    if (((EditText) v.findViewById(R.id.cvEndDate)).getText().toString().isEmpty()){
+                        AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Eksik Bilgi(" + (i+1) + ". Plan)", "Başlangıç saati bilgisi boş bırakılamaz!", "Tamam", null);
+                        return;
+                    }
+                    if (!(((CheckBox) v.findViewById(R.id.cbChannel1)).isChecked() ||
+                        ((CheckBox) v.findViewById(R.id.cbChannel2)).isChecked() ||
+                        ((CheckBox) v.findViewById(R.id.cbChannel3)).isChecked() ||
+                        ((CheckBox) v.findViewById(R.id.cbChannel4)).isChecked())){
+                        AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Eksik Bilgi(" + (i+1) + ". Plan)", "Plan yapılacak kanal bilgisi boş bırakılamaz!", "Tamam", null);
+                        return;
+                    }
+
+                    PlanModel planModel = new PlanModel();
+                    planModel.setPlanId(i+1);
+                    planModel.setPlanName(planModel.getPlanId() + ". Plan");
+                    planModel.setDate(((Spinner) v.findViewById(R.id.cvDate)).getSelectedItemPosition());
+                    planModel.setStartTime(((EditText) v.findViewById(R.id.cvStartDate)).getText().toString());
+                    planModel.setEndTime(((EditText) v.findViewById(R.id.cvEndDate)).getText().toString());
+                    planModel.setChannel1(((CheckBox) v.findViewById(R.id.cbChannel1)).isChecked());
+                    planModel.setChannel2(((CheckBox) v.findViewById(R.id.cbChannel2)).isChecked());
+                    planModel.setChannel3(((CheckBox) v.findViewById(R.id.cbChannel3)).isChecked());
+                    planModel.setChannel4(((CheckBox) v.findViewById(R.id.cbChannel4)).isChecked());
+                    TempDatabase.plans.add(planModel);
+                }
                 BluetoothService.sendData(_context, 0xf9);
                 String receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
-                if (receiveHexData.equalsIgnoreCase("F9")){
+                if (receiveHexData.equalsIgnoreCase("F9")) {
+                    ProgressDialog progressDialog = new ProgressDialog(_context);
+                    progressDialog.setMessage("Yükleniyor...");
+                    progressDialog.setCancelable(false);
+                    progressDialog.create();
                     progressDialog.show();
                     for (PlanModel model : TempDatabase.plans) {
                         String day = String.valueOf(model.getDate());
@@ -122,39 +164,56 @@ public class PlanningFragment extends BaseFragment {
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
+                            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                            BluetoothService.sendData(_context, 0xf9);
+                            BluetoothService.sendData(_context, 0xfd);
+                            break;
                         }
                         sendData = Integer.parseInt(startHour, 16);
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
+                            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                            BluetoothService.sendData(_context, 0xf9);
+                            BluetoothService.sendData(_context, 0xfd);
+                            break;
                         }
                         sendData = Integer.parseInt(startMin, 16);
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
+                            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                            BluetoothService.sendData(_context, 0xf9);
+                            BluetoothService.sendData(_context, 0xfd);
+                            break;
                         }
                         sendData = Integer.parseInt(endHour, 16);
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
+                            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                            BluetoothService.sendData(_context, 0xf9);
+                            BluetoothService.sendData(_context, 0xfd);
+                            break;
                         }
                         sendData = Integer.parseInt(endMin, 16);
                         BluetoothService.sendData(_context, sendData);
                         receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
                         if (!receiveHexData.equalsIgnoreCase(Integer.toHexString(sendData))) {
-                            AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData):" + Integer.toHexString(sendData) + " receiveHexData:" + receiveHexData);
+                            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                            BluetoothService.sendData(_context, 0xf9);
+                            BluetoothService.sendData(_context, 0xfd);
+                            break;
                         }
                     }
                     progressDialog.hide();
-                }else{
-                    AlertHelper.ShowAlertDialog(_context, "Hata", "hata: Integer.toHexString(sendData): F9 receiveHexData:" + receiveHexData);
+                    AlertHelper.ShowAlertDialog(_context, AlertType.INFO,  "Aktarım İşlemi", "Planlarınız başarıyla aktarıldı!", "Tamam", null);
+                } else {
+                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
                     BluetoothService.sendData(_context, 0xf9);
                 }
                 BluetoothService.sendData(_context, 0xfd);
+                setPlanAdapter(rvPlans, planAdapter);
             }
         });
 
@@ -162,126 +221,11 @@ public class PlanningFragment extends BaseFragment {
         runnable = new Runnable() {
             @Override
             public void run() {
-                boolean isConnected = BluetoothService.isConnected();
-                if (!isConnected) {
-                    Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
-                    for (BluetoothDevice device : pairedDevices) {
-                        if (device.getName().equals("PTB")) {
-                            BluetoothService.connectToDevice(_context, device);
-                            break;
-                        }
-                    }
-                }
-                isConnected = BluetoothService.isConnected();
-                if (isConnected) {
-                    if (!_isUpdate){
-                        BluetoothService.sendData(_context, 0xfd);
-                        BluetoothService.sendData(_context, 0xfe);
-                        String receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
-                        if (receiveHexData.equalsIgnoreCase("FE")) {
-                            BluetoothService.sendData(_context, 0xfb);
-                            receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
-                            if (!receiveHexData.equalsIgnoreCase("FA")){
-                                TempDatabase.clearPlan();
-                                while (!receiveHexData.equalsIgnoreCase("FA")) {
-                                    PlanModel plan = new PlanModel();
-                                    plan.setPlanId(TempDatabase.getMaxPlanId());
-                                    plan.setPlanName(TempDatabase.getMaxPlanId() + ". Plan");
-                                    plan.setDate(IntegerHelper.hexToInt(receiveHexData.split("")[0]));
-
-                                    int receiveChannels = IntegerHelper.hexToInt(receiveHexData.split("")[1]);
-                                    char[] receiveChannelsBinary = (StringHelper.repeatString("0", 4 - Integer.toBinaryString(receiveChannels).length()) + Integer.toBinaryString(receiveChannels)).toCharArray();
-                                    if (receiveChannelsBinary.length < 4) {
-                                        AlertHelper.ShowAlertDialog(_context, "Hata", "Bağlantı Hatası!");
-                                        return;
-                                    } else {
-                                        if (receiveChannelsBinary[3] == '1') {
-                                            plan.setChannel1(true);
-                                        }
-                                        if (receiveChannelsBinary[2] == '1') {
-                                            plan.setChannel2(true);
-                                        }
-                                        if (receiveChannelsBinary[1] == '1') {
-                                            plan.setChannel3(true);
-                                        }
-                                        if (receiveChannelsBinary[0] == '1') {
-                                            plan.setChannel4(true);
-                                        }
-                                    }
-
-                                    //startTime
-                                    BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
-                                    receiveHexData =  StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
-                                    if (receiveHexData.equalsIgnoreCase("FB") || receiveHexData.equalsIgnoreCase("FA") ){
-                                        AlertHelper.ShowAlertDialog(_context, "Hata", "Veri alım Hatası!");
-                                        continue;
-                                    }
-                                    String startHour = receiveHexData;
-                                    BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
-                                    receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
-                                    if (receiveHexData.equalsIgnoreCase("FB") || receiveHexData.equalsIgnoreCase("FA") ){
-                                        AlertHelper.ShowAlertDialog(_context, "Hata", "Veri alım Hatası!");
-                                        continue;
-                                    }
-                                    String startMin = receiveHexData;
-                                    plan.setStartTime(startHour + ":" + startMin);
-
-                                    //endTime
-                                    BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
-                                    receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
-                                    if (receiveHexData.equalsIgnoreCase("FB") || receiveHexData.equalsIgnoreCase("FA") ){
-                                        AlertHelper.ShowAlertDialog(_context, "Hata", "Veri alım Hatası!");
-                                        continue;
-                                    }
-                                    String endHour = receiveHexData;
-                                    BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
-                                    receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
-                                    if (receiveHexData.equalsIgnoreCase("FB") || receiveHexData.equalsIgnoreCase("FA") ){
-                                        AlertHelper.ShowAlertDialog(_context, "Hata", "Veri alım Hatası!");
-                                        continue;
-                                    }
-                                    String endMin = receiveHexData;
-                                    plan.setEndTime(endHour + ":" + endMin);
-                                    BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
-                                    receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
-                                    if (receiveHexData.equalsIgnoreCase("FB")){
-                                        TempDatabase.addPlan(plan);
-                                        BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
-                                    }else {
-                                        AlertHelper.ShowAlertDialog(_context, "Hata", "Veri gönderiminde sıra hatası oluştu lütfen tekrar deneyiniz!");
-                                    }
-                                    receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
-                                }
-                                PlanAdapter planAdapter = new PlanAdapter(TempDatabase.plans, customClickListener);
-                                RecyclerView rvPlans = root.findViewById(R.id.plans);
-                                setPlanAdapter(rvPlans,planAdapter);
-                            }
-//                            else {
-//                                receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
-//                            }
-                        } else {
-                            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR,
-                                    "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!",
-                                    "Çık",
-                                    new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialogInterface, int i) {
-                                            getActivity().finish();
-                                        }
-                                    }, true, null);
-                        }
-                    }
-
-                    btnSendPlan.setVisibility(View.VISIBLE);
-                    progressDialog.hide();
-                }
+                refreshContent();
             }
         };
         handler.postDelayed(runnable, 0);
-
-        PlanAdapter planAdapter = new PlanAdapter(TempDatabase.plans, customClickListener);
-        RecyclerView rvPlans = root.findViewById(R.id.plans);
-        setPlanAdapter(rvPlans,planAdapter);
+        setPlanAdapter(rvPlans, planAdapter);
         return root;
     }
 
@@ -310,7 +254,7 @@ public class PlanningFragment extends BaseFragment {
 
     }
 
-    public void setPlanAdapter(RecyclerView rvPlans, PlanAdapter planAdapter ){
+    public void setPlanAdapter(RecyclerView rvPlans, PlanAdapter planAdapter) {
         LinearLayoutManager llManager = new LinearLayoutManager(_context);
         llManager.setOrientation(LinearLayoutManager.VERTICAL);
         llManager.scrollToPosition(0);
@@ -319,5 +263,123 @@ public class PlanningFragment extends BaseFragment {
         rvPlans.setNestedScrollingEnabled(false);
         rvPlans.setAdapter(planAdapter);
         rvPlans.setItemAnimator(new DefaultItemAnimator());
+    }
+    private void refreshContent() {
+        if (!swipeRefreshLayout.isRefreshing()){
+            swipeRefreshLayout.setRefreshing(true);
+        }
+        boolean isConnected = BluetoothService.isConnected();
+        if (!isConnected) {
+            Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
+            for (BluetoothDevice device : pairedDevices) {
+                if (device.getName().equals("PTB")) {
+                    BluetoothService.connectToDevice(_context, device);
+                    break;
+                }
+            }
+        }
+        isConnected = BluetoothService.isConnected();
+        if (isConnected) {
+            if (!_isUpdate) {
+                TempDatabase.clearPlan();
+                BluetoothService.sendData(_context, 0xfd);
+                BluetoothService.sendData(_context, 0xfe);
+                String receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
+                if (receiveHexData.equalsIgnoreCase("FE")) {
+                    BluetoothService.sendData(_context, 0xfb);
+                    receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
+                    if (!receiveHexData.equalsIgnoreCase("FA")) {
+                        while (!receiveHexData.equalsIgnoreCase("FA")) {
+                            PlanModel plan = new PlanModel();
+                            plan.setPlanId(TempDatabase.getMaxPlanId());
+                            plan.setPlanName(TempDatabase.getMaxPlanId() + ". Plan");
+                            plan.setDate(IntegerHelper.hexToInt(receiveHexData.split("")[0]));
+
+                            int receiveChannels = IntegerHelper.hexToInt(receiveHexData.split("")[1]);
+                            char[] receiveChannelsBinary = (StringHelper.repeatString("0", 4 - Integer.toBinaryString(receiveChannels).length()) + Integer.toBinaryString(receiveChannels)).toCharArray();
+                            if (receiveChannelsBinary.length < 4) {
+                                AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                                return;
+                            } else {
+                                if (receiveChannelsBinary[3] == '1') {
+                                    plan.setChannel1(true);
+                                }
+                                if (receiveChannelsBinary[2] == '1') {
+                                    plan.setChannel2(true);
+                                }
+                                if (receiveChannelsBinary[1] == '1') {
+                                    plan.setChannel3(true);
+                                }
+                                if (receiveChannelsBinary[0] == '1') {
+                                    plan.setChannel4(true);
+                                }
+                            }
+
+                            //startTime
+                            BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
+                            receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
+                            if (receiveHexData.equalsIgnoreCase("FB") || receiveHexData.equalsIgnoreCase("FA")) {
+                                AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                                continue;
+                            }
+                            String startHour = receiveHexData;
+                            BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
+                            receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
+                            if (receiveHexData.equalsIgnoreCase("FB") || receiveHexData.equalsIgnoreCase("FA")) {
+                                AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                                continue;
+                            }
+                            String startMin = receiveHexData;
+                            plan.setStartTime(startHour + ":" + startMin);
+
+                            //endTime
+                            BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
+                            receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
+                            if (receiveHexData.equalsIgnoreCase("FB") || receiveHexData.equalsIgnoreCase("FA")) {
+                                AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                                continue;
+                            }
+                            String endHour = receiveHexData;
+                            BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
+                            receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
+                            if (receiveHexData.equalsIgnoreCase("FB") || receiveHexData.equalsIgnoreCase("FA")) {
+                                AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                                continue;
+                            }
+                            String endMin = receiveHexData;
+                            plan.setEndTime(endHour + ":" + endMin);
+                            BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
+                            receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
+                            if (receiveHexData.equalsIgnoreCase("FB")) {
+                                TempDatabase.addPlan(plan);
+                                BluetoothService.sendData(_context, IntegerHelper.hexToInt(receiveHexData));
+                            } else {
+                                AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Hata","Veri aktarımında bir hata oluştu! Lütfen tekrar deneyiniz!", "Tamam", null);
+                            }
+                            receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
+                        }
+                        setPlanAdapter(rvPlans, planAdapter);
+                    }
+//                            else {
+//                                receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
+//                            }
+                } else {
+                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!", "Çık", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            getActivity().finish();
+                        }
+                    }, true, null);
+                }
+            }
+
+            btnSendPlan.setVisibility(View.VISIBLE);
+        }
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        }, 2000);
     }
 }
