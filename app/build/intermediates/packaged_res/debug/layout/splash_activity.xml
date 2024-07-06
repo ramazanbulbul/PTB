@@ -16,6 +16,7 @@
         android:textColor="@color/orb_white"
         android:layout_marginBottom="8dp"/>
     <TextView
+        android:id="@+id/splashDescr"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"

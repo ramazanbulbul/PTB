@@ -3095,6 +3095,8 @@ drawable ic_calender
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_close
+drawable ic_connection
+drawable ic_edit
 drawable ic_error_24
 drawable ic_home
 drawable ic_info_24
@@ -3109,12 +3111,14 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_paperclip
 drawable ic_phone
 drawable ic_phone_128
 drawable ic_plus
 drawable ic_plus_1
 drawable ic_refresh
 drawable ic_right_arrow
+drawable ic_save
 drawable ic_search_black_24
 drawable ic_settings
 drawable ic_switch_off
@@ -3123,6 +3127,7 @@ drawable ic_switch_on
 drawable ic_switch_on_disable
 drawable ic_task_512
 drawable ic_thumb_512
+drawable ic_trash
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3301,6 +3306,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAddDevice
 id btnAddPlan
 id btnClose
 id btnDelete
@@ -3376,6 +3382,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id device_list
 id dialog_button
 id dimensions
 id direct
@@ -3416,7 +3423,6 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
-id first_fragment
 id fitCenter
 id fitEnd
 id fitStart
@@ -3429,6 +3435,9 @@ id floating
 id forever
 id fragment
 id fragment_container_view_tag
+id fragment_my_devices
+id fragment_online_control
+id fragment_planning
 id frost
 id fullscreen_header
 id ghost_view
@@ -3455,6 +3464,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgBtIcon
+id imgConnect
+id imgEdit
+id imgRefresh
 id imgRefreshDate
 id immediateStop
 id included
@@ -3479,6 +3492,7 @@ id line3
 id linear
 id listMode
 id list_item
+id llDevice
 id loChannel
 id loDay
 id loPlan
@@ -3618,6 +3632,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id rvDevices
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3638,7 +3653,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id second_fragment
 id select_dialog_listview
 id selected
 id selection_type
@@ -3661,6 +3675,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id splashDescr
 id spline
 id split_action_bar
 id spread
@@ -3735,6 +3750,8 @@ id transition_transform
 id triangle
 id tv_count
 id txtDate
+id txtDeviceAddress
+id txtDeviceName
 id txtTitle
 id unchecked
 id uniform
@@ -3877,6 +3894,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_plan
 layout activity_main
+layout activity_my_devices
+layout cardview_device
 layout cardview_plan
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3894,6 +3913,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout footer_layout
+layout fragment_my_devices
 layout fragment_online_control
 layout fragment_planning
 layout m3_alert_dialog

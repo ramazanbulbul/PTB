@@ -1,50 +1,26 @@
 package com.orbteknoloji.ptb.main;
 
 import android.Manifest;
-import android.animation.ObjectAnimator;
-import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.Navigation;
-import androidx.viewpager.widget.ViewPager;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
-import com.google.android.material.tabs.TabLayout;
 import com.orbteknoloji.ptb.BaseActivity;
 import com.orbteknoloji.ptb.R;
-import com.orbteknoloji.ptb.adapters.PlanAdapter;
-import com.orbteknoloji.ptb.adapters.ViewPagerAdapter;
 import com.orbteknoloji.ptb.enums.AlertType;
 import com.orbteknoloji.ptb.helpers.AlertHelper;
 import com.orbteknoloji.ptb.helpers.FragmentHelper;
-import com.orbteknoloji.ptb.helpers.StringHelper;
-import com.orbteknoloji.ptb.services.BluetoothService;
-
-import java.util.Objects;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import me.ibrahimsn.lib.OnItemReselectedListener;
-import me.ibrahimsn.lib.OnItemSelectedListener;
-import me.ibrahimsn.lib.SmoothBottomBar;
 
 public class MainActivity extends BaseActivity {
     private static final int REQUEST_ENABLE_BT = 10001;
@@ -76,8 +52,9 @@ public class MainActivity extends BaseActivity {
         LinearLayout fragment = findViewById(R.id.fragment);
 //        SmoothBottomBar bottomBar = findViewById(R.id.bottomBar);
         MeowBottomNavigation bottomNavigation = findViewById(R.id.bottomNavigation);
-        bottomNavigation.add(new MeowBottomNavigation.Model(0, R.drawable.ic_home));
-        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_task_512));
+        bottomNavigation.add(new MeowBottomNavigation.Model(0, R.drawable.ic_bluetooth_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_home));
+        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_task_512));
         Intent intent = getIntent();
         String TAB_PAGE = intent.getStringExtra("TAB");
         boolean isUpdate = intent.getBooleanExtra("IS_UPDATE", false);
@@ -265,11 +242,15 @@ public class MainActivity extends BaseActivity {
 //        }
         switch (selectedBottomBar) {
             case 0:
-                FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new OnlineControlFragment());
+                FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new MyDeviceFragment());
                 break;
             case 1:
+                FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new OnlineControlFragment());
+                break;
+            case 2:
                 FragmentHelper.setFragmentTransaction(getSupportFragmentManager(), R.id.fragment, new PlanningFragment(isUpdate));
                 break;
+
         }
     }
 }

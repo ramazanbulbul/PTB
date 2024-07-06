@@ -3,19 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/first_fragment">
-
+    app:startDestination="@id/fragment_my_devices">
     <fragment
-        android:id="@+id/first_fragment"
+        android:id="@+id/fragment_my_devices"
+        android:name="com.orbteknoloji.ptb.main.MyDeviceFragment"
+        android:label="Connections"
+        tools:layout="@layout/fragment_my_devices" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/fragment_online_control" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_online_control"
         android:name="com.orbteknoloji.ptb.main.OnlineControlFragment"
         android:label="Dashboard"
         tools:layout="@layout/fragment_online_control" >
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
-            app:destination="@id/second_fragment" />
+            app:destination="@id/fragment_planning" />
     </fragment>
     <fragment
-        android:id="@+id/second_fragment"
+        android:id="@+id/fragment_planning"
         android:name="com.orbteknoloji.ptb.main.PlanningFragment"
         android:label="Leaderboard"
         tools:layout="@layout/fragment_planning" >

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:2:1-51:12
 MERGED from [com.github.ibrahimsn98:SmoothBottomBar:1.7.6] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\226581e42885c709e910938583893398\transformed\jetified-SmoothBottomBar-1.7.6\AndroidManifest.xml:2:1-11:12
 MERGED from [com.etebarian:meow-bottom-navigation:1.2.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\ca5b81b986fc74a8d502964df6b0c164\transformed\jetified-meow-bottom-navigation-1.2.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\0ceb6a5bf1f0017e32227c0a87cd9130\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
@@ -78,27 +78,35 @@ uses-permission#android.permission.BLUETOOTH
 ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:5:22-65
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:6:5-72
+	android:name
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:6:22-70
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:6:5-73
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:7:5-73
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:6:22-71
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:7:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:7:5-80
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.BLUETOOTH_CONNECT
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:8:5-76
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:10:5-76
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:8:22-73
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:10:22-73
 uses-feature#android.hardware.bluetooth
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:9:5-86
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:11:5-86
 	android:required
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:9:61-84
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:11:61-84
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:9:19-60
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:11:19-60
 application
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:11:5-47:19
-INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:11:5-47:19
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:13:5-49:19
+INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:13:5-49:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\99dc24b8086e9e02f60cbc0643cdc897\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\99dc24b8086e9e02f60cbc0643cdc897\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\1f371f754bd6786f9a76f8e2fd18482b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -122,71 +130,71 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramazan.bulbul\.gr
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ramazan.bulbul\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:18:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:16:9-54
 	android:roundIcon
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:19:9-54
 	tools:targetApi
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:20:9-29
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:22:9-29
 	android:icon
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:21:9-41
 	android:dataExtractionRules
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:13:9-65
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:15:9-65
 activity#com.orbteknoloji.ptb.main.MainActivity
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:21:9-31:20
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:23:9-33:20
 	android:screenOrientation
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:24:13-47
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:26:13-47
 	android:exported
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:23:13-36
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:25:13-36
 	android:theme
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:25:13-46
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:27:13-46
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:22:13-46
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:24:13-46
 intent-filter#action:name:android.intent.action.HOME+category:name:android.intent.category.DEFAULT
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:26:13-30:29
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.HOME
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:29:17-76
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:31:17-76
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:29:27-73
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:31:27-73
 activity#com.orbteknoloji.ptb.main.SplashActivity
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:32:9-43:20
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:34:9-45:20
 	android:screenOrientation
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:36:13-47
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:38:13-47
 	android:label
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:34:13-45
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:36:13-45
 	android:exported
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:35:13-36
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:37:13-36
 	android:theme
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:37:13-46
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:39:13-46
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:33:13-48
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:35:13-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:40:13-44:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:39:17-69
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:39:25-66
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:41:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:41:17-77
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:41:27-74
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:43:27-74
 activity#com.orbteknoloji.ptb.main.AddPlanActivity
-ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:44:9-46:40
+ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:46:9-48:40
 	android:label
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:46:13-38
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:48:13-38
 	android:name
-		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:45:13-49
+		ADDED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml:47:13-49
 uses-sdk
 INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ramazan.bulbul\Documents\GitHub\PTB\app\src\main\AndroidManifest.xml

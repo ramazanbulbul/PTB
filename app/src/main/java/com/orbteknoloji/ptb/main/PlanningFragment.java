@@ -37,7 +37,6 @@ import com.orbteknoloji.ptb.enums.RepeatStringType;
 import com.orbteknoloji.ptb.helpers.AlertHelper;
 import com.orbteknoloji.ptb.helpers.IntegerHelper;
 import com.orbteknoloji.ptb.helpers.StringHelper;
-import com.orbteknoloji.ptb.listeners.CustomClickListener;
 import com.orbteknoloji.ptb.models.PlanModel;
 import com.orbteknoloji.ptb.services.BluetoothService;
 
@@ -45,7 +44,7 @@ import java.util.Calendar;
 import java.util.Set;
 
 public class PlanningFragment extends BaseFragment {
-    Button btnAddPlan;
+//    Button btnAddPlan;
     FloatingActionButton btnSendPlan;
     private Handler handler;
     private Runnable runnable;
@@ -68,12 +67,12 @@ public class PlanningFragment extends BaseFragment {
         final View root = inflater.inflate(R.layout.fragment_planning, container, false);
         _context = root.getContext();
         _activity = getActivity();
-        btnAddPlan = root.findViewById(R.id.btnAddPlan);
+//        btnAddPlan = root.findViewById(R.id.btnAddPlan);
         btnSendPlan = root.findViewById(R.id.btnSendPlan);
-        planAdapter = new PlanAdapter(TempDatabase.plans);
+        planAdapter = new PlanAdapter();
         rvPlans = root.findViewById(R.id.plans);
         swipeRefreshLayout = root.findViewById(R.id.swipe_refresh_layout);
-
+        swipeRefreshLayout.setRefreshing(true);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -83,65 +82,42 @@ public class PlanningFragment extends BaseFragment {
         btnSendPlan.setVisibility(View.GONE);
 
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        if (!bluetoothAdapter.isEnabled()) {
-            Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
-        }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            if (ActivityCompat.checkSelfPermission(_context, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(_activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, REQUEST_BLUETOOTH_CONNECT);
-            }
-        }
-        btnAddPlan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (TempDatabase.plans.size() >= 25){
-                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Sınıra ulaşıldı", "Maksimum plan sayısına ulaştınız!");
-                }
-                PlanModel planModel = new PlanModel();
-                planModel.setPlanName(planAdapter.getItemCount() + 1 + ". Plan");
-                planModel.setDate(Calendar.getInstance().get(Calendar.DAY_OF_WEEK) - 1 == 0 ? 7 : Calendar.getInstance().get(Calendar.DAY_OF_WEEK) - 1);
-                planAdapter.addItem(planModel);
-                rvPlans.scrollToPosition(planAdapter.getItemCount() - 1);
-            }
-        });
+//        btnAddPlan.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (TempDatabase.plans.size() >= 25){
+//                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Sınıra ulaşıldı", "Maksimum plan sayısına ulaştınız!");
+//                }
+//                PlanModel planModel = new PlanModel();
+//                planModel.setPlanName(planAdapter.getItemCount() + 1 + ". Plan");
+//                planModel.setDate(Calendar.getInstance().get(Calendar.DAY_OF_WEEK) - 1 == 0 ? 7 : Calendar.getInstance().get(Calendar.DAY_OF_WEEK) - 1);
+//                planAdapter.addItem(planModel);
+//                rvPlans.scrollToPosition(planAdapter.getItemCount() - 1);
+//            }
+//        });
         btnSendPlan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TempDatabase.clearPlan();
-                for (int i = 0; i < rvPlans.getChildCount(); i++) {
-                    View v = rvPlans.getChildAt(i);
-                    if (((Spinner)v.findViewById(R.id.cvDate)).getSelectedItemPosition() == 0){
+                for (int i = 0; i < TempDatabase.plans.size(); i++) {
+                    if (TempDatabase.plans.get(i).getDate() == 0){
                         AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Eksik Bilgi(" + (i+1) + ". Plan)", "Gün bilgisi boş bırakılamaz!", "Tamam", null);
                         return;
                     }
-                    if (((EditText) v.findViewById(R.id.cvStartDate)).getText().toString().isEmpty()){
+                    if (TempDatabase.plans.get(i).getStartTime().isEmpty()){
                         AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Eksik Bilgi(" + (i+1) + ". Plan)", "Başlangıç saati bilgisi boş bırakılamaz!", "Tamam", null);
                         return;
                     }
-                    if (((EditText) v.findViewById(R.id.cvEndDate)).getText().toString().isEmpty()){
+                    if (TempDatabase.plans.get(i).getEndTime().isEmpty()){
                         AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Eksik Bilgi(" + (i+1) + ". Plan)", "Başlangıç saati bilgisi boş bırakılamaz!", "Tamam", null);
                         return;
                     }
-                    if (!(((CheckBox) v.findViewById(R.id.cbChannel1)).isChecked() ||
-                        ((CheckBox) v.findViewById(R.id.cbChannel2)).isChecked() ||
-                        ((CheckBox) v.findViewById(R.id.cbChannel3)).isChecked() ||
-                        ((CheckBox) v.findViewById(R.id.cbChannel4)).isChecked())){
+                    if (!(TempDatabase.plans.get(i).isChannel1() ||
+                            TempDatabase.plans.get(i).isChannel2() ||
+                            TempDatabase.plans.get(i).isChannel3()||
+                            TempDatabase.plans.get(i).isChannel4())){
                         AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Eksik Bilgi(" + (i+1) + ". Plan)", "Plan yapılacak kanal bilgisi boş bırakılamaz!", "Tamam", null);
                         return;
                     }
-
-                    PlanModel planModel = new PlanModel();
-                    planModel.setPlanId(i+1);
-                    planModel.setPlanName(planModel.getPlanId() + ". Plan");
-                    planModel.setDate(((Spinner) v.findViewById(R.id.cvDate)).getSelectedItemPosition());
-                    planModel.setStartTime(((EditText) v.findViewById(R.id.cvStartDate)).getText().toString());
-                    planModel.setEndTime(((EditText) v.findViewById(R.id.cvEndDate)).getText().toString());
-                    planModel.setChannel1(((CheckBox) v.findViewById(R.id.cbChannel1)).isChecked());
-                    planModel.setChannel2(((CheckBox) v.findViewById(R.id.cbChannel2)).isChecked());
-                    planModel.setChannel3(((CheckBox) v.findViewById(R.id.cbChannel3)).isChecked());
-                    planModel.setChannel4(((CheckBox) v.findViewById(R.id.cbChannel4)).isChecked());
-                    TempDatabase.plans.add(planModel);
                 }
                 BluetoothService.sendData(_context, 0xf9);
                 String receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
@@ -213,7 +189,7 @@ public class PlanningFragment extends BaseFragment {
                     BluetoothService.sendData(_context, 0xf9);
                 }
                 BluetoothService.sendData(_context, 0xfd);
-                setPlanAdapter(rvPlans, planAdapter);
+                refreshContent();
             }
         });
 
@@ -224,8 +200,7 @@ public class PlanningFragment extends BaseFragment {
                 refreshContent();
             }
         };
-        handler.postDelayed(runnable, 0);
-        setPlanAdapter(rvPlans, planAdapter);
+        handler.postDelayed(runnable, 275);
         return root;
     }
 
@@ -254,13 +229,17 @@ public class PlanningFragment extends BaseFragment {
 
     }
 
-    public void setPlanAdapter(RecyclerView rvPlans, PlanAdapter planAdapter) {
+    public void setPlanAdapter(RecyclerView rvPlans) {
+        if (TempDatabase.plans.size() == 0){
+            PlanModel planModel = new PlanModel();
+            planModel.setPlanName(planAdapter.getItemCount() + ". Plan");
+            planModel.setDate(Calendar.getInstance().get(Calendar.DAY_OF_WEEK) - 1 == 0 ? 7 : Calendar.getInstance().get(Calendar.DAY_OF_WEEK) - 1);
+            planAdapter.addItem(planModel);
+        }
         LinearLayoutManager llManager = new LinearLayoutManager(_context);
         llManager.setOrientation(LinearLayoutManager.VERTICAL);
         llManager.scrollToPosition(0);
         rvPlans.setLayoutManager(llManager);
-        rvPlans.setHasFixedSize(true);
-        rvPlans.setNestedScrollingEnabled(false);
         rvPlans.setAdapter(planAdapter);
         rvPlans.setItemAnimator(new DefaultItemAnimator());
     }
@@ -269,16 +248,21 @@ public class PlanningFragment extends BaseFragment {
             swipeRefreshLayout.setRefreshing(true);
         }
         boolean isConnected = BluetoothService.isConnected();
-        if (!isConnected) {
-            Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
-            for (BluetoothDevice device : pairedDevices) {
-                if (device.getName().equals("PTB")) {
-                    BluetoothService.connectToDevice(_context, device);
-                    break;
-                }
-            }
+//        if (!isConnected) {
+//            Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
+//            for (BluetoothDevice device : pairedDevices) {
+//                if (device.getName().equals("PTB")) {
+//                    BluetoothService.connectToDevice(_context, device);
+//                    break;
+//                }
+//            }
+//        }
+        int counter = 0;
+        while (!isConnected && counter < 5 ){
+            BluetoothService.connectToDevice(_context, BluetoothService.getConnectedDevice());
+            counter++;
+            isConnected = BluetoothService.isConnected();
         }
-        isConnected = BluetoothService.isConnected();
         if (isConnected) {
             if (!_isUpdate) {
                 TempDatabase.clearPlan();
@@ -358,22 +342,20 @@ public class PlanningFragment extends BaseFragment {
                             }
                             receiveHexData = StringHelper.repeatString(Integer.toHexString(BluetoothService.receiveData(_context)), 2, "0", RepeatStringType.BEFORE);
                         }
-                        setPlanAdapter(rvPlans, planAdapter);
                     }
+                    setPlanAdapter(rvPlans);
+
 //                            else {
 //                                receiveHexData = Integer.toHexString(BluetoothService.receiveData(_context));
 //                            }
                 } else {
-                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!", "Çık", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            getActivity().finish();
-                        }
-                    }, true, null);
+                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!", "Tamam", null, true, null);
                 }
             }
 
             btnSendPlan.setVisibility(View.VISIBLE);
+        }else {
+            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!", "Tamam", null, true, null);
         }
         new Handler().postDelayed(new Runnable() {
             @Override

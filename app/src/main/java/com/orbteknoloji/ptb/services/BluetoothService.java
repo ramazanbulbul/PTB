@@ -1,11 +1,13 @@
 package com.orbteknoloji.ptb.services;
 
 import android.Manifest;
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.util.Log;
 
 import androidx.core.app.ActivityCompat;
 
@@ -15,12 +17,17 @@ import com.orbteknoloji.ptb.helpers.AlertHelper;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Set;
 import java.util.UUID;
 
 public class BluetoothService {
     private static BluetoothSocket socket;
     private static OutputStream outputStream;
     private static InputStream inputStream;
+    private static BluetoothDevice connectedDevice;
+    private static BluetoothAdapter bluetoothAdapter;
+
+    static int counter = 0;
 
     public static boolean connectToDevice(Context _context, BluetoothDevice device) {
         UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"); // SPP UUID
@@ -31,19 +38,41 @@ public class BluetoothService {
                     return false;
                 }
             }
-            socket = socket == null ? device.createRfcommSocketToServiceRecord(uuid) : socket;
+
+            if (getConnectedDeviceAddress().equalsIgnoreCase(device.getName())) socket = null;
+
+            socket = device.createRfcommSocketToServiceRecord(uuid);
             socket.connect();
             outputStream = socket.getOutputStream();
             inputStream = socket.getInputStream();
         } catch (IOException e) {
 //            AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası 1", e.getMessage());
-            return false;
+            if (counter < 5) {
+                connectToDevice(_context, device);
+            }else {
+                return false;
+            }
+            counter++;
         }
+        connectedDevice = device;
         return true;
+    }
+    public static boolean connectToDevice(Context _context, String btMacAddress){
+        if (BluetoothService.getBluetoothAdapter().isEnabled()) {
+            Set<BluetoothDevice> pairedDevices = BluetoothService.getBluetoothAdapter().getBondedDevices();
+            for (BluetoothDevice device : pairedDevices) {
+                Log.d("connectToDevice", btMacAddress);
+                if (device.getAddress().equals(btMacAddress)) {
+                    return BluetoothService.connectToDevice(_context, device);
+                }
+            }
+        }
+        return false;
     }
 
     public static boolean sendData(Context _context, String data) {
         try {
+            if (!isConnected()) connectToDevice(_context, connectedDevice);
             outputStream.write(data.getBytes());
         } catch (IOException e) {
             AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!");
@@ -53,6 +82,7 @@ public class BluetoothService {
     }
     public static boolean sendData(Context _context, byte[] data) {
         try {
+            if (!isConnected()) connectToDevice(_context, connectedDevice);
             outputStream.write(data);
         } catch (IOException e) {
             AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!" + e.getMessage());
@@ -62,6 +92,7 @@ public class BluetoothService {
     }
     public static boolean sendData(Context _context, byte data) {
         try {
+            if (!isConnected()) connectToDevice(_context, connectedDevice);
             outputStream.write(data);
         } catch (IOException e) {
             AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!");
@@ -71,6 +102,7 @@ public class BluetoothService {
     }
     public static boolean sendData(Context _context, int data) {
         try {
+            if (!isConnected()) connectToDevice(_context, connectedDevice);
             outputStream.write(data);
         } catch (IOException e) {
             AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Bluetooth Hatası", "Bilgi gönderimi sırasında bir problemle karışlaşıldı!");
@@ -81,6 +113,7 @@ public class BluetoothService {
 
     public static int receiveData(Context _context) {
         try {
+            if (!isConnected()) connectToDevice(_context, connectedDevice);
             if (inputStream == null) return -1;
             return inputStream.read();
         } catch (IOException e) {
@@ -91,6 +124,7 @@ public class BluetoothService {
     public static String receiveData(Context _context, int bufferSize) {
         String receivedMessage = "";
         try {
+            if (!isConnected()) connectToDevice(_context, connectedDevice);
             if (inputStream == null) return "false";
             for (int i = 0; i < bufferSize; i++) {
                 receivedMessage += Integer.toHexString(inputStream.read())+ " ";
@@ -112,5 +146,21 @@ public class BluetoothService {
     }
     public static boolean isConnected(){
         return socket != null ? socket.isConnected() : false;
+    }
+
+    public static BluetoothDevice getConnectedDevice() {
+        return connectedDevice;
+    }
+    public static String getConnectedDeviceAddress() {
+        return connectedDevice != null ? connectedDevice.getAddress() : "";
+    }
+
+
+    public static BluetoothAdapter getBluetoothAdapter() {
+        return bluetoothAdapter;
+    }
+
+    public static void setBluetoothAdapter(BluetoothAdapter bluetoothAdapter) {
+        BluetoothService.bluetoothAdapter = bluetoothAdapter;
     }
 }

@@ -77,32 +77,11 @@ public class OnlineControlFragment extends BaseFragment {
         imgRefreshDate = root.findViewById(R.id.imgRefreshDate);
         txtDate = root.findViewById(R.id.txtDate);
 
-        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        if (!bluetoothAdapter.isEnabled()) {
-            Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
-        }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            if (ActivityCompat.checkSelfPermission(_context, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(_activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, REQUEST_BLUETOOTH_CONNECT);
-            }
-        }
-
         handler = new Handler(Looper.getMainLooper());
         runnable = new Runnable() {
             @Override
             public void run() {
                 boolean isConnected = BluetoothService.isConnected();
-                if (!isConnected) {
-                    Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
-                    for (BluetoothDevice device : pairedDevices) {
-                        if (device.getName().equals("PTB")) {
-                            BluetoothService.connectToDevice(_context, device);
-                            break;
-                        }
-                    }
-                }
-                isConnected = BluetoothService.isConnected();
                 if (isConnected) {
                     sChannel1.setEnabled(true);
                     sChannel1.setThumbTintList(ColorStateList.valueOf(ContextCompat.getColor(_context, R.color.orb_purple)));
@@ -236,15 +215,7 @@ public class OnlineControlFragment extends BaseFragment {
                     progressDialog.hide();
                 } else {
                     progressDialog.hide();
-                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR,
-                            "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!",
-                            "Çık",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    getActivity().finish();
-                                }
-                            }, true, null);
+                    AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!", "Tamam", null, true, null);
                 }
             }
         };

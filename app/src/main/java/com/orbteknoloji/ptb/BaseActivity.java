@@ -7,12 +7,15 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.orbteknoloji.ptb.services.SQLLiteService;
+
 public class BaseActivity extends AppCompatActivity {
     public Context _context;
     public Activity _activity;
     boolean doubleBackToExitPressedOnce = false;
     private Handler mHandler = new Handler();
     private Runnable mRunnable;
+    public SQLLiteService _db;
     public BaseActivity() {
     }
 
