@@ -31,5 +31,5 @@
     <color name="orb_purple_close">#7065EF</color>
     <color name="orb_purple">#28208C</color>
     <color name="rounded_corner">#F5F5F5</color>
-
+    <color name="semi_transparent">#80FF0000</color>
 </resources>

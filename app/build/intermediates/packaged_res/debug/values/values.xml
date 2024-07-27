@@ -12,7 +12,7 @@
     <color name="fab">#393939</color>
     <color name="firstlayer">#FFFFFF</color>
     <color name="green">#00C68E</color>
-    <color name="ic_launcher_background">#000000</color>
+    <color name="ic_launcher_background">#1D71B8</color>
     <color name="indicator">#393939</color>
     <color name="login_details">#CCFFFFFF</color>
     <color name="login_details_light">#1AFFFFFF</color>
@@ -25,6 +25,7 @@
     <color name="rehoming_post">#DADADA</color>
     <color name="rhusername">#202020</color>
     <color name="rounded_corner">#F5F5F5</color>
+    <color name="semi_transparent">#00FF0000</color>
     <color name="settings">#393939</color>
     <string name="app_name">PTB</string>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">

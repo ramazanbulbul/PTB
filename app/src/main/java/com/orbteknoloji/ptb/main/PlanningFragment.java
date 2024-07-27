@@ -257,12 +257,12 @@ public class PlanningFragment extends BaseFragment {
 //                }
 //            }
 //        }
-        int counter = 0;
-        while (!isConnected && counter < 5 ){
-            BluetoothService.connectToDevice(_context, BluetoothService.getConnectedDevice());
-            counter++;
-            isConnected = BluetoothService.isConnected();
-        }
+//        int counter = 0;
+//        while (!isConnected && counter < 5 ){
+//            BluetoothService.connectToDevice(_context, BluetoothService.getConnectedDevice());
+//            counter++;
+//            isConnected = BluetoothService.isConnected();
+//        }
         if (isConnected) {
             if (!_isUpdate) {
                 TempDatabase.clearPlan();

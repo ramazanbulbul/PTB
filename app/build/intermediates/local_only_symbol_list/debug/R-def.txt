@@ -26,6 +26,7 @@ color orb_white
 color rehoming_post
 color rhusername
 color rounded_corner
+color semi_transparent
 color settings
 drawable bg_button
 drawable bg_edittext
@@ -144,6 +145,7 @@ layout fragment_planning
 layout splash_activity
 menu bottommenu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation bottombar_navigation
 string app_name

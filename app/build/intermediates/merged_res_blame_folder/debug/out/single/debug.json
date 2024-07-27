@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-mdpi_ic_launcher_ptb_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-mdpi\\ic_launcher_ptb_foreground.webp"
+    },
+    {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_right_arrow.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_right_arrow.xml"
     },
@@ -12,16 +16,12 @@
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_bg_button.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\bg_button.xml"
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_bg_track.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\bg_track.xml"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_switch_on.xml.flat",
@@ -44,14 +44,6 @@
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_bluetooth_connected_24.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\xml\\data_extraction_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_splash_activity.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\splash_activity.xml"
     },
@@ -68,32 +60,12 @@
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\navigation\\bottombar_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\font_roboto_light.ttf.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\font\\roboto_light.ttf"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_bluetooth_24.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_bluetooth_24.xml"
-    },
-    {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/layout_cardview_device.xml.flat",
-        "source": "com.orbteknoloji.ptb.app-main-52:/layout/cardview_device.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_v_task_128.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\v_task_128.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_home.xml.flat",
@@ -104,40 +76,28 @@
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_switch_off_disable.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_error_24.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_error_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_activity_add_plan.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\activity_add_plan.xml"
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_ptb_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxhdpi\\ic_launcher_ptb_foreground.webp"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_bluetooth_disabled_24.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_bluetooth_disabled_24.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_phone_128.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_phone_128.xml"
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_settings.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_settings.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_edit.xml.flat",
@@ -152,10 +112,6 @@
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\cardview_plan.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_plus.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_plus.xml"
-    },
-    {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_switch_off.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_switch_off.xml"
     },
@@ -168,20 +124,8 @@
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\cardview_device.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_bluetooth_searching_24.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_bluetooth_searching_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_bg_edittext.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\bg_edittext.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_fragment_planning.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\fragment_planning.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_thumb_512.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_thumb_512.xml"
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_ptb_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xhdpi\\ic_launcher_ptb_foreground.webp"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_bg_form.xml.flat",
@@ -192,40 +136,28 @@
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\footer_layout.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_paperclip.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_paperclip.xml"
-    },
-    {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_connection.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_connection.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\anim_rotate.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\anim\\rotate.xml"
-    },
-    {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_close.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_close.xml"
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-hdpi_ic_launcher_hdpi.png.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-hdpi\\ic_launcher_hdpi.png"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\menu_bottommenu.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\menu\\bottommenu.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_refresh.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_refresh.xml"
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\font_roboto_thin.ttf.flat",
@@ -236,6 +168,194 @@
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_trash.xml"
     },
     {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_fragment_online_control.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\fragment_online_control.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_save.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_save.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_bg_button.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\bg_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_bg_track.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\bg_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_ptb_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_ptb_foreground.webp"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\font_roboto_light.ttf.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\font\\roboto_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_bluetooth_24.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_bluetooth_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-mdpi_ic_launcher_mdpi.png.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-mdpi\\ic_launcher_mdpi.png"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_v_task_128.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\v_task_128.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_error_24.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_error_24.xml"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_activity_add_plan.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\activity_add_plan.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_phone_128.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_phone_128.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_plus.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_plus.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_bluetooth_searching_24.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_bluetooth_searching_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_bg_edittext.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\bg_edittext.xml"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_thumb_512.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_thumb_512.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_fragment_planning.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\fragment_planning.xml"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_paperclip.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_paperclip.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_xhdpi.png.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xhdpi\\ic_launcher_xhdpi.png"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_xxxhdpi.png.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_xxxhdpi.png"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-hdpi_ic_launcher_ptb_foreground.webp.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-hdpi\\ic_launcher_ptb_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\anim_rotate.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\anim\\rotate.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_refresh.xml.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_refresh.xml"
+    },
+    {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_left_arrow.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_left_arrow.xml"
     },
@@ -244,27 +364,23 @@
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\activity_my_devices.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_xxhdpi.png.flat",
+        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-xxhdpi\\ic_launcher_xxhdpi.png"
     },
     {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_fragment_online_control.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\fragment_online_control.xml"
-    },
-    {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\layout_fragment_my_devices.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\layout\\fragment_my_devices.xml"
     },
     {
-        "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_save.xml.flat",
-        "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_save.xml"
-    },
-    {
         "merged": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-merged_res-50:\\drawable_ic_task_512.xml.flat",
         "source": "C:\\Users\\ramazan.bulbul\\.gradle\\daemon\\8.2\\com.orbteknoloji.ptb.app-main-52:\\drawable\\ic_task_512.xml"
+    },
+    {
+        "merged": "com.orbteknoloji.ptb.app-merged_res-50:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.orbteknoloji.ptb.app-main-52:/mipmap-mdpi/ic_launcher_round.webp"
     }
 ]

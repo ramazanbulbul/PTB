@@ -41,7 +41,7 @@ public class SplashActivity extends BaseActivity {
 //    private static final int REQUEST_BLUETOOTH = 10000;
     private static final int REQUEST_ENABLE_BT = 10001;
 //    private static final int REQUEST_COARSE_LOCATION = 10002;
-//    private static final int REQUEST_BLUETOOTH_CONNECT = 10003;
+    private static final int REQUEST_BLUETOOTH_CONNECT = 10003;
 //    private static final int REQUEST_BLUETOOTH_SCAN = 10004;
 //    private static final int REQUEST_FINE_LOCATION = 10005;
 //    private static final int REQUEST_ENABLE_LOCATION = 10006;
@@ -77,8 +77,14 @@ public class SplashActivity extends BaseActivity {
                     startActivity(new Intent(SplashActivity.this, MainActivity.class));
                     finish();
                 }else{
-                    if (ContextCompat.checkSelfPermission(_context, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED) {
-                       enableBluetooth();
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                        if (ContextCompat.checkSelfPermission(_context, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED) {
+                            enableBluetooth();
+                        }else{
+                            ActivityCompat.requestPermissions(_activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, REQUEST_BLUETOOTH_CONNECT);
+                        }
+                    }else{
+                        enableBluetooth();
                     }
                 }
             }
@@ -271,6 +277,15 @@ public class SplashActivity extends BaseActivity {
             switch (requestCode) {
                 case REQUEST_ENABLE_BT:
                     enableBluetooth();
+                    break;
+                case REQUEST_BLUETOOTH_CONNECT:
+                    if (ActivityCompat.checkSelfPermission(_context, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                            ActivityCompat.requestPermissions(_activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, REQUEST_BLUETOOTH_CONNECT);
+                        }
+                    }else{
+                        enableBluetooth();
+                    }
                     break;
             }
         }
