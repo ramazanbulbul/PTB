@@ -63,11 +63,11 @@ public class OnlineControlFragment extends BaseFragment {
         _context = root.getContext();
         _activity = getActivity();
 
-        ProgressDialog progressDialog = new ProgressDialog(_context);
-        progressDialog.setMessage("Yükleniyor...");
-        progressDialog.setCancelable(false);
-        progressDialog.create();
-        progressDialog.show();
+        ProgressDialog pd = new ProgressDialog(_context);
+        pd.setMessage("Yükleniyor...");
+        pd.setCancelable(false);
+        pd.create();
+        pd.show();
 
         sChannel1 = root.findViewById(R.id.switchChannel1);
         sChannel2 = root.findViewById(R.id.switchChannel2);
@@ -212,9 +212,11 @@ public class OnlineControlFragment extends BaseFragment {
                             }
                         }
                     });
-                    progressDialog.hide();
+                    pd.hide();
+                    pd.dismiss();
                 } else {
-                    progressDialog.hide();
+                    pd.hide();
+                    pd.dismiss();
                     AlertHelper.ShowAlertDialog(_context, AlertType.ERROR, "Cihaz Hatası", "Doğru cihaza bağlantı kurduğunuza emin olun!", "Tamam", null, true, null);
                 }
             }
